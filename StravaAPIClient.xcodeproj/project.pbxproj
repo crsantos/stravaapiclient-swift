@@ -1,0 +1,1587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		193A227C263BA01F1DC6E4E9 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF0F208DBA1A3B8353F69B1 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS.framework */; };
+		1FF53F671FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
+		1FF53F681FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
+		1FF53F691FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
+		1FF53F6A1FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
+		1FF53F6B1FF5329D00E12D4F /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F631FF5329D00E12D4F /* Bike.swift */; };
+		1FF53F6C1FF5329D00E12D4F /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F631FF5329D00E12D4F /* Bike.swift */; };
+		1FF53F6D1FF5329D00E12D4F /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F631FF5329D00E12D4F /* Bike.swift */; };
+		1FF53F6E1FF5329D00E12D4F /* Bike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F631FF5329D00E12D4F /* Bike.swift */; };
+		1FF53F6F1FF5329D00E12D4F /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F641FF5329D00E12D4F /* Athlete.swift */; };
+		1FF53F701FF5329D00E12D4F /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F641FF5329D00E12D4F /* Athlete.swift */; };
+		1FF53F711FF5329D00E12D4F /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F641FF5329D00E12D4F /* Athlete.swift */; };
+		1FF53F721FF5329D00E12D4F /* Athlete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F641FF5329D00E12D4F /* Athlete.swift */; };
+		1FF53F751FF5401800E12D4F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F741FF5401800E12D4F /* HTTPMethod.swift */; };
+		1FF53F761FF5401800E12D4F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F741FF5401800E12D4F /* HTTPMethod.swift */; };
+		1FF53F771FF5401800E12D4F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F741FF5401800E12D4F /* HTTPMethod.swift */; };
+		1FF53F781FF5401800E12D4F /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F741FF5401800E12D4F /* HTTPMethod.swift */; };
+		1FF53F7A1FF5477200E12D4F /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F791FF5477200E12D4F /* HTTPRequester.swift */; };
+		1FF53F7B1FF5477200E12D4F /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F791FF5477200E12D4F /* HTTPRequester.swift */; };
+		1FF53F7C1FF5477200E12D4F /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F791FF5477200E12D4F /* HTTPRequester.swift */; };
+		1FF53F7D1FF5477200E12D4F /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F791FF5477200E12D4F /* HTTPRequester.swift */; };
+		1FF53F801FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F7F1FF5487E00E12D4F /* URLResourceRequestConvertible.swift */; };
+		1FF53F811FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F7F1FF5487E00E12D4F /* URLResourceRequestConvertible.swift */; };
+		1FF53F821FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F7F1FF5487E00E12D4F /* URLResourceRequestConvertible.swift */; };
+		1FF53F831FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F7F1FF5487E00E12D4F /* URLResourceRequestConvertible.swift */; };
+		1FF53F861FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F851FF54A0E00E12D4F /* StravaAPIRouter.swift */; };
+		1FF53F871FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F851FF54A0E00E12D4F /* StravaAPIRouter.swift */; };
+		1FF53F881FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F851FF54A0E00E12D4F /* StravaAPIRouter.swift */; };
+		1FF53F891FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F851FF54A0E00E12D4F /* StravaAPIRouter.swift */; };
+		1FF53F8B1FF5554700E12D4F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8A1FF5554700E12D4F /* Networking.swift */; };
+		1FF53F8C1FF5554700E12D4F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8A1FF5554700E12D4F /* Networking.swift */; };
+		1FF53F8D1FF5554700E12D4F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8A1FF5554700E12D4F /* Networking.swift */; };
+		1FF53F8E1FF5554700E12D4F /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8A1FF5554700E12D4F /* Networking.swift */; };
+		1FF53F901FF5A78700E12D4F /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8F1FF5A78700E12D4F /* RequestSerializer.swift */; };
+		1FF53F911FF5A78700E12D4F /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8F1FF5A78700E12D4F /* RequestSerializer.swift */; };
+		1FF53F921FF5A78700E12D4F /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8F1FF5A78700E12D4F /* RequestSerializer.swift */; };
+		1FF53F931FF5A78700E12D4F /* RequestSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F8F1FF5A78700E12D4F /* RequestSerializer.swift */; };
+		52D6D9871BEFF229002C0205 /* StravaAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D97C1BEFF229002C0205 /* StravaAPIClient.framework */; };
+		564C5463926ECE2582D64B32 /* Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B7424CF8BD70FD31536F3C /* Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework */; };
+		6795A49DB7B5CD45BA33FEC8 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92067873EC09C86ADF335C1 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS_Tests.framework */; };
+		86AB1CC1DE3F9DA7468CFD7E /* Pods_StravaAPIClientBase_StravaAPIClient_macOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4469FB1D6E0275D462674560 /* Pods_StravaAPIClientBase_StravaAPIClient_macOS_Tests.framework */; };
+		8933C7851EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
+		8933C7861EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
+		8933C7871EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
+		8933C7881EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
+		8933C78E1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */; };
+		8933C78F1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */; };
+		8933C7901EB5B82D000D00A4 /* StravaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */; };
+		9592864A14E9248AF5C787F0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB2CA0625B01B6A130314D0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework */; };
+		AECBDE462FB102B5CE323C98 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6984C4AD4C3D1EC336152649 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework */; };
+		DD7502881C68FEDE006590AF /* StravaAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* StravaAPIClient.framework */; };
+		DD7502921C690C7A006590AF /* StravaAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6D9F01BEFFFBE002C0205 /* StravaAPIClient.framework */; };
+		EC1CC905CAD79406A107551E /* Pods_StravaAPIClientBase_StravaAPIClient_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 511560252C289BB66ACDE24D /* Pods_StravaAPIClientBase_StravaAPIClient_watchOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D97B1BEFF229002C0205;
+			remoteInfo = StravaAPIClient;
+		};
+		DD7502801C68FCFC006590AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6DA0E1BF000BD002C0205;
+			remoteInfo = "StravaAPIClient-macOS";
+		};
+		DD7502931C690C7A006590AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52D6D9731BEFF229002C0205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52D6D9EF1BEFFFBE002C0205;
+			remoteInfo = "StravaAPIClient-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		038958BFB3307824617D59B1 /* Pods-StravaAPIClientBase-StravaAPIClient-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS/Pods-StravaAPIClientBase-StravaAPIClient-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		05881B475E9B0B4BEED2A30A /* Pods-StravaAPIClientBase-StravaAPIClient-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-watchOS/Pods-StravaAPIClientBase-StravaAPIClient-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		06C3E0B63DE6437EA8E180D5 /* Pods_StravaAPIClient_StravaAPIClient_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF7521835B60103FA608EF4 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-watchOS/Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1D954D7C3686D2627FF83BB2 /* Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS/Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = StravaAPIClient.podspec; sourceTree = "<group>"; };
+		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
+		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		1FF53F5D1FF531C400E12D4F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1FF53F5E1FF531C400E12D4F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1FF53F601FF531D800E12D4F /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		1FF53F621FF5329D00E12D4F /* Club.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		1FF53F631FF5329D00E12D4F /* Bike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bike.swift; sourceTree = "<group>"; };
+		1FF53F641FF5329D00E12D4F /* Athlete.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Athlete.swift; sourceTree = "<group>"; };
+		1FF53F741FF5401800E12D4F /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		1FF53F791FF5477200E12D4F /* HTTPRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequester.swift; sourceTree = "<group>"; };
+		1FF53F7F1FF5487E00E12D4F /* URLResourceRequestConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLResourceRequestConvertible.swift; sourceTree = "<group>"; };
+		1FF53F851FF54A0E00E12D4F /* StravaAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPIRouter.swift; sourceTree = "<group>"; };
+		1FF53F8A1FF5554700E12D4F /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1FF53F8F1FF5A78700E12D4F /* RequestSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSerializer.swift; sourceTree = "<group>"; };
+		337A407E6270493BDB030B7E /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3932E4D141DCDFCD9CAB24CD /* Pods-StravaAPIClientBase-StravaAPIClient-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS/Pods-StravaAPIClientBase-StravaAPIClient-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		3BF347F168EA04AF213582FC /* Pods-StravaAPIClientBase-StravaAPIClient-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-watchOS/Pods-StravaAPIClientBase-StravaAPIClient-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3FF6000F340D7F63476ED0D1 /* Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4469FB1D6E0275D462674560 /* Pods_StravaAPIClientBase_StravaAPIClient_macOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_macOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		511560252C289BB66ACDE24D /* Pods_StravaAPIClientBase_StravaAPIClient_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D97C1BEFF229002C0205 /* StravaAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9861BEFF229002C0205 /* StravaAPIClient-iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StravaAPIClient-iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9E21BEFFF6E002C0205 /* StravaAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6D9F01BEFFFBE002C0205 /* StravaAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D6DA0F1BF000BD002C0205 /* StravaAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StravaAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63673BB1C63E2416CB72BC8A /* Pods-StravaAPIClientBase-StravaAPIClient-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS/Pods-StravaAPIClientBase-StravaAPIClient-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		644049B27D449699A32629DE /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS/Pods-StravaAPIClientBase-StravaAPIClient-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6782898F2508A273BDF2044F /* Pods-StravaAPIClient-StravaAPIClient-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-macOS/Pods-StravaAPIClient-StravaAPIClient-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		6984C4AD4C3D1EC336152649 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		705B1444FE0A9DD869EEE47A /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		71A493BA49078336429E697C /* Pods_StravaAPIClient_StravaAPIClient_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83B7424CF8BD70FD31536F3C /* Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886E6E6622330A6F6A9BF547 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaAPIClient.swift; sourceTree = "<group>"; };
+		8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaAPIClientTests.swift; sourceTree = "<group>"; };
+		8CDFAB16BE4F8CF467D001B5 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-watchOS/Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig"; sourceTree = "<group>"; };
+		954536A81F82745B9239EF3B /* Pods_StravaAPIClient_StravaAPIClient_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8151FC0971818C8A068295E /* Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS Tests/Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AD2FAA261CD0B6D800659CF4 /* StravaAPIClient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StravaAPIClient.plist; sourceTree = "<group>"; };
+		AD2FAA281CD0B6E100659CF4 /* StravaAPIClientTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = StravaAPIClientTests.plist; sourceTree = "<group>"; };
+		BFE390DC7BBFBEFD1D7F2D50 /* Pods-StravaAPIClient-StravaAPIClient-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS/Pods-StravaAPIClient-StravaAPIClient-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		C006374382A8C36C1CF2D7B4 /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS/Pods-StravaAPIClientBase-StravaAPIClient-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		C5618E79FFDB55404F51EE1D /* Pods-StravaAPIClientBase-StravaAPIClient-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS/Pods-StravaAPIClientBase-StravaAPIClient-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C760F3E9B6647B2105A57A6E /* Pods_StravaAPIClient_StravaAPIClient_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C92067873EC09C86ADF335C1 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC491249C7213BF466B91CB4 /* Pods-StravaAPIClient-StravaAPIClient-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-tvOS/Pods-StravaAPIClient-StravaAPIClient-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		CEF0F208DBA1A3B8353F69B1 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFBACB13E2C16B18FD2C318C /* Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC33FB392B0B0E14DFFE3015 /* Pods_StravaAPIClient_StravaAPIClient_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75027A1C68FCFC006590AF /* StravaAPIClient-macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StravaAPIClient-macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD75028D1C690C7A006590AF /* StravaAPIClient-tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "StravaAPIClient-tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0F6C9B200099ADD4515E244 /* Pods-StravaAPIClient-StravaAPIClient-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-macOS/Pods-StravaAPIClient-StravaAPIClient-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E6D0D423A305303A7E0A3BA3 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F138755596850262B34F1284 /* Pods-StravaAPIClient-StravaAPIClient-iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS Tests/Pods-StravaAPIClient-StravaAPIClient-iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB4F065CC747B89D45594409 /* Pods-StravaAPIClient-StravaAPIClient-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-tvOS/Pods-StravaAPIClient-StravaAPIClient-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FCB2CA0625B01B6A130314D0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52D6D9781BEFF229002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193A227C263BA01F1DC6E4E9 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9831BEFF229002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52D6D9871BEFF229002C0205 /* StravaAPIClient.framework in Frameworks */,
+				6795A49DB7B5CD45BA33FEC8 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9DE1BEFFF6E002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC1CC905CAD79406A107551E /* Pods_StravaAPIClientBase_StravaAPIClient_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9EC1BEFFFBE002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECBDE462FB102B5CE323C98 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0B1BF000BD002C0205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				564C5463926ECE2582D64B32 /* Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502771C68FCFC006590AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7502881C68FEDE006590AF /* StravaAPIClient.framework in Frameworks */,
+				86AB1CC1DE3F9DA7468CFD7E /* Pods_StravaAPIClientBase_StravaAPIClient_macOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75028A1C690C7A006590AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD7502921C690C7A006590AF /* StravaAPIClient.framework in Frameworks */,
+				9592864A14E9248AF5C787F0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F5EA43E1FF51B9100ED872E /* Podspec Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */,
+				1FF53F5B1FF531B200E12D4F /* swiftlint.sh */,
+				1FF53F601FF531D800E12D4F /* .swiftlint.yml */,
+				1FF53F5C1FF531BB00E12D4F /* Gemfile */,
+				1FF53F5D1FF531C400E12D4F /* LICENSE */,
+				1FF53F5E1FF531C400E12D4F /* README.md */,
+			);
+			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		1FF53F611FF5329D00E12D4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1FF53F621FF5329D00E12D4F /* Club.swift */,
+				1FF53F631FF5329D00E12D4F /* Bike.swift */,
+				1FF53F641FF5329D00E12D4F /* Athlete.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1FF53F651FF5329D00E12D4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FF53F661FF5329D00E12D4F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1FF53F841FF54A0100E12D4F /* Resources */,
+				1FF53F731FF5400600E12D4F /* Enums */,
+				1FF53F791FF5477200E12D4F /* HTTPRequester.swift */,
+				1FF53F8A1FF5554700E12D4F /* Networking.swift */,
+				1FF53F8F1FF5A78700E12D4F /* RequestSerializer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1FF53F731FF5400600E12D4F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1FF53F741FF5401800E12D4F /* HTTPMethod.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		1FF53F7E1FF5484B00E12D4F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1FF53F7F1FF5487E00E12D4F /* URLResourceRequestConvertible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1FF53F841FF54A0100E12D4F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1FF53F851FF54A0E00E12D4F /* StravaAPIRouter.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		274B7C54EA9EC3C4508AD292 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D954D7C3686D2627FF83BB2 /* Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig */,
+				BFE390DC7BBFBEFD1D7F2D50 /* Pods-StravaAPIClient-StravaAPIClient-iOS.release.xcconfig */,
+				F138755596850262B34F1284 /* Pods-StravaAPIClient-StravaAPIClient-iOS Tests.debug.xcconfig */,
+				A8151FC0971818C8A068295E /* Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig */,
+				E0F6C9B200099ADD4515E244 /* Pods-StravaAPIClient-StravaAPIClient-macOS.debug.xcconfig */,
+				6782898F2508A273BDF2044F /* Pods-StravaAPIClient-StravaAPIClient-macOS.release.xcconfig */,
+				FB4F065CC747B89D45594409 /* Pods-StravaAPIClient-StravaAPIClient-tvOS.debug.xcconfig */,
+				CC491249C7213BF466B91CB4 /* Pods-StravaAPIClient-StravaAPIClient-tvOS.release.xcconfig */,
+				1AF7521835B60103FA608EF4 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig */,
+				8CDFAB16BE4F8CF467D001B5 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig */,
+				C5618E79FFDB55404F51EE1D /* Pods-StravaAPIClientBase-StravaAPIClient-iOS.debug.xcconfig */,
+				3932E4D141DCDFCD9CAB24CD /* Pods-StravaAPIClientBase-StravaAPIClient-iOS.release.xcconfig */,
+				886E6E6622330A6F6A9BF547 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig */,
+				E6D0D423A305303A7E0A3BA3 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.release.xcconfig */,
+				63673BB1C63E2416CB72BC8A /* Pods-StravaAPIClientBase-StravaAPIClient-macOS.debug.xcconfig */,
+				038958BFB3307824617D59B1 /* Pods-StravaAPIClientBase-StravaAPIClient-macOS.release.xcconfig */,
+				644049B27D449699A32629DE /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS.debug.xcconfig */,
+				C006374382A8C36C1CF2D7B4 /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS.release.xcconfig */,
+				3BF347F168EA04AF213582FC /* Pods-StravaAPIClientBase-StravaAPIClient-watchOS.debug.xcconfig */,
+				05881B475E9B0B4BEED2A30A /* Pods-StravaAPIClientBase-StravaAPIClient-watchOS.release.xcconfig */,
+				CFBACB13E2C16B18FD2C318C /* Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.debug.xcconfig */,
+				3FF6000F340D7F63476ED0D1 /* Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.release.xcconfig */,
+				337A407E6270493BDB030B7E /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.debug.xcconfig */,
+				705B1444FE0A9DD869EEE47A /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52D6D9721BEFF229002C0205 = {
+			isa = PBXGroup;
+			children = (
+				1F5EA43E1FF51B9100ED872E /* Podspec Metadata */,
+				8933C7811EB5B7E0000D00A4 /* Sources */,
+				8933C7831EB5B7EB000D00A4 /* Tests */,
+				52D6D99C1BEFF38C002C0205 /* Configs */,
+				52D6D97D1BEFF229002C0205 /* Products */,
+				274B7C54EA9EC3C4508AD292 /* Pods */,
+				F7201C12E451134B2D80F818 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52D6D97D1BEFF229002C0205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52D6D97C1BEFF229002C0205 /* StravaAPIClient.framework */,
+				52D6D9861BEFF229002C0205 /* StravaAPIClient-iOS Tests.xctest */,
+				52D6D9E21BEFFF6E002C0205 /* StravaAPIClient.framework */,
+				52D6D9F01BEFFFBE002C0205 /* StravaAPIClient.framework */,
+				52D6DA0F1BF000BD002C0205 /* StravaAPIClient.framework */,
+				DD75027A1C68FCFC006590AF /* StravaAPIClient-macOS Tests.xctest */,
+				DD75028D1C690C7A006590AF /* StravaAPIClient-tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52D6D99C1BEFF38C002C0205 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				DD7502721C68FC1B006590AF /* Frameworks */,
+				DD7502731C68FC20006590AF /* Tests */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		8933C7811EB5B7E0000D00A4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1FF53F7E1FF5484B00E12D4F /* Protocols */,
+				8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */,
+				1FF53F651FF5329D00E12D4F /* Extensions */,
+				1FF53F611FF5329D00E12D4F /* Models */,
+				1FF53F661FF5329D00E12D4F /* Network */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8933C7831EB5B7EB000D00A4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */,
+			);
+			name = Tests;
+			path = Tests/StravaAPIClientTests;
+			sourceTree = "<group>";
+		};
+		DD7502721C68FC1B006590AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD2FAA261CD0B6D800659CF4 /* StravaAPIClient.plist */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD7502731C68FC20006590AF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AD2FAA281CD0B6E100659CF4 /* StravaAPIClientTests.plist */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		F7201C12E451134B2D80F818 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C760F3E9B6647B2105A57A6E /* Pods_StravaAPIClient_StravaAPIClient_iOS.framework */,
+				71A493BA49078336429E697C /* Pods_StravaAPIClient_StravaAPIClient_iOS_Tests.framework */,
+				954536A81F82745B9239EF3B /* Pods_StravaAPIClient_StravaAPIClient_macOS.framework */,
+				DC33FB392B0B0E14DFFE3015 /* Pods_StravaAPIClient_StravaAPIClient_tvOS.framework */,
+				06C3E0B63DE6437EA8E180D5 /* Pods_StravaAPIClient_StravaAPIClient_watchOS.framework */,
+				CEF0F208DBA1A3B8353F69B1 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS.framework */,
+				C92067873EC09C86ADF335C1 /* Pods_StravaAPIClientBase_StravaAPIClient_iOS_Tests.framework */,
+				83B7424CF8BD70FD31536F3C /* Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework */,
+				6984C4AD4C3D1EC336152649 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework */,
+				511560252C289BB66ACDE24D /* Pods_StravaAPIClientBase_StravaAPIClient_watchOS.framework */,
+				4469FB1D6E0275D462674560 /* Pods_StravaAPIClientBase_StravaAPIClient_macOS_Tests.framework */,
+				FCB2CA0625B01B6A130314D0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		52D6D9791BEFF229002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9DF1BEFFF6E002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9ED1BEFFFBE002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0C1BF000BD002C0205 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		52D6D97B1BEFF229002C0205 /* StravaAPIClient-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-iOS" */;
+			buildPhases = (
+				A4701C41AA6131646949E6EE /* [CP] Check Pods Manifest.lock */,
+				52D6D9771BEFF229002C0205 /* Sources */,
+				52D6D9781BEFF229002C0205 /* Frameworks */,
+				52D6D9791BEFF229002C0205 /* Headers */,
+				52D6D97A1BEFF229002C0205 /* Resources */,
+				1F5EA4401FF51BD200ED872E /* Swiftlint */,
+				A57B600BA923FA8427DD75C6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StravaAPIClient-iOS";
+			productName = StravaAPIClient;
+			productReference = 52D6D97C1BEFF229002C0205 /* StravaAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52D6D9851BEFF229002C0205 /* StravaAPIClient-iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6D9931BEFF229002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-iOS Tests" */;
+			buildPhases = (
+				4268FBAD91FE507DFB52B7B5 /* [CP] Check Pods Manifest.lock */,
+				52D6D9821BEFF229002C0205 /* Sources */,
+				52D6D9831BEFF229002C0205 /* Frameworks */,
+				52D6D9841BEFF229002C0205 /* Resources */,
+				D3EA07D1D66BFBC9B5EDA823 /* [CP] Embed Pods Frameworks */,
+				E4D7AB22C5EB27C4DF2F46B5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52D6D9891BEFF229002C0205 /* PBXTargetDependency */,
+			);
+			name = "StravaAPIClient-iOS Tests";
+			productName = StravaAPIClientTests;
+			productReference = 52D6D9861BEFF229002C0205 /* StravaAPIClient-iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52D6D9E11BEFFF6E002C0205 /* StravaAPIClient-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-watchOS" */;
+			buildPhases = (
+				FA2E1EB783BC96C4D786BA18 /* [CP] Check Pods Manifest.lock */,
+				52D6D9DD1BEFFF6E002C0205 /* Sources */,
+				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
+				52D6D9DF1BEFFF6E002C0205 /* Headers */,
+				52D6D9E01BEFFF6E002C0205 /* Resources */,
+				53206FB135A0D3A2F29A9EC5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StravaAPIClient-watchOS";
+			productName = "StravaAPIClient-watchOS";
+			productReference = 52D6D9E21BEFFF6E002C0205 /* StravaAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52D6D9EF1BEFFFBE002C0205 /* StravaAPIClient-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-tvOS" */;
+			buildPhases = (
+				E2D3E8B6E7223963F741230B /* [CP] Check Pods Manifest.lock */,
+				52D6D9EB1BEFFFBE002C0205 /* Sources */,
+				52D6D9EC1BEFFFBE002C0205 /* Frameworks */,
+				52D6D9ED1BEFFFBE002C0205 /* Headers */,
+				52D6D9EE1BEFFFBE002C0205 /* Resources */,
+				9F04656DC56EFBF3F2CD74EB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StravaAPIClient-tvOS";
+			productName = "StravaAPIClient-tvOS";
+			productReference = 52D6D9F01BEFFFBE002C0205 /* StravaAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		52D6DA0E1BF000BD002C0205 /* StravaAPIClient-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-macOS" */;
+			buildPhases = (
+				BA0B76931863D5D586A3AC3E /* [CP] Check Pods Manifest.lock */,
+				52D6DA0A1BF000BD002C0205 /* Sources */,
+				52D6DA0B1BF000BD002C0205 /* Frameworks */,
+				52D6DA0C1BF000BD002C0205 /* Headers */,
+				52D6DA0D1BF000BD002C0205 /* Resources */,
+				08F74DC1DE4FCCCA5FB5071C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StravaAPIClient-macOS";
+			productName = "StravaAPIClient-macOS";
+			productReference = 52D6DA0F1BF000BD002C0205 /* StravaAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD7502791C68FCFC006590AF /* StravaAPIClient-macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "StravaAPIClient-macOS Tests" */;
+			buildPhases = (
+				608AB99377DFED1DBA28DC6F /* [CP] Check Pods Manifest.lock */,
+				DD7502761C68FCFC006590AF /* Sources */,
+				DD7502771C68FCFC006590AF /* Frameworks */,
+				DD7502781C68FCFC006590AF /* Resources */,
+				E3A4BAA022D3010BBBC9E060 /* [CP] Embed Pods Frameworks */,
+				30FF95AAB99BE9AB84EABBFB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7502811C68FCFC006590AF /* PBXTargetDependency */,
+			);
+			name = "StravaAPIClient-macOS Tests";
+			productName = "StravaAPIClient-OS Tests";
+			productReference = DD75027A1C68FCFC006590AF /* StravaAPIClient-macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD75028C1C690C7A006590AF /* StravaAPIClient-tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD7502951C690C7A006590AF /* Build configuration list for PBXNativeTarget "StravaAPIClient-tvOS Tests" */;
+			buildPhases = (
+				080312B847A1EB95E3AF45A6 /* [CP] Check Pods Manifest.lock */,
+				DD7502891C690C7A006590AF /* Sources */,
+				DD75028A1C690C7A006590AF /* Frameworks */,
+				DD75028B1C690C7A006590AF /* Resources */,
+				AD43B7169BE4266F0B07ABFE /* [CP] Embed Pods Frameworks */,
+				2C898D4E0C26B054D52438F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD7502941C690C7A006590AF /* PBXTargetDependency */,
+			);
+			name = "StravaAPIClient-tvOS Tests";
+			productName = "StravaAPIClient-tvOS Tests";
+			productReference = DD75028D1C690C7A006590AF /* StravaAPIClient-tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52D6D9731BEFF229002C0205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = crsantos.info;
+				TargetAttributes = {
+					52D6D97B1BEFF229002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6D9851BEFF229002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6D9E11BEFFF6E002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6D9EF1BEFFFBE002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					52D6DA0E1BF000BD002C0205 = {
+						CreatedOnToolsVersion = 7.1;
+						LastSwiftMigration = 0800;
+					};
+					DD7502791C68FCFC006590AF = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
+					};
+					DD75028C1C690C7A006590AF = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 52D6D9761BEFF229002C0205 /* Build configuration list for PBXProject "StravaAPIClient" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 52D6D9721BEFF229002C0205;
+			productRefGroup = 52D6D97D1BEFF229002C0205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52D6D97B1BEFF229002C0205 /* StravaAPIClient-iOS */,
+				52D6DA0E1BF000BD002C0205 /* StravaAPIClient-macOS */,
+				52D6D9E11BEFFF6E002C0205 /* StravaAPIClient-watchOS */,
+				52D6D9EF1BEFFFBE002C0205 /* StravaAPIClient-tvOS */,
+				52D6D9851BEFF229002C0205 /* StravaAPIClient-iOS Tests */,
+				DD7502791C68FCFC006590AF /* StravaAPIClient-macOS Tests */,
+				DD75028C1C690C7A006590AF /* StravaAPIClient-tvOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52D6D97A1BEFF229002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9841BEFF229002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9E01BEFFF6E002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9EE1BEFFFBE002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0D1BF000BD002C0205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502781C68FCFC006590AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD75028B1C690C7A006590AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		080312B847A1EB95E3AF45A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08F74DC1DE4FCCCA5FB5071C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS/Pods-StravaAPIClientBase-StravaAPIClient-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F5EA4401FF51BD200ED872E /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./scripts/swiftlint.sh;
+		};
+		2C898D4E0C26B054D52438F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		30FF95AAB99BE9AB84EABBFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4268FBAD91FE507DFB52B7B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53206FB135A0D3A2F29A9EC5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-watchOS/Pods-StravaAPIClientBase-StravaAPIClient-watchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608AB99377DFED1DBA28DC6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F04656DC56EFBF3F2CD74EB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS/Pods-StravaAPIClientBase-StravaAPIClient-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4701C41AA6131646949E6EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A57B600BA923FA8427DD75C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS/Pods-StravaAPIClientBase-StravaAPIClient-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD43B7169BE4266F0B07ABFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA0B76931863D5D586A3AC3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3EA07D1D66BFBC9B5EDA823 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2D3E8B6E7223963F741230B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3A4BAA022D3010BBBC9E060 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
+				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mockingjay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/URITemplate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D7AB22C5EB27C4DF2F46B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2E1EB783BC96C4D786BA18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StravaAPIClientBase-StravaAPIClient-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52D6D9771BEFF229002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C7851EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1FF53F801FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
+				1FF53F671FF5329D00E12D4F /* Club.swift in Sources */,
+				1FF53F8B1FF5554700E12D4F /* Networking.swift in Sources */,
+				1FF53F7A1FF5477200E12D4F /* HTTPRequester.swift in Sources */,
+				1FF53F901FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
+				1FF53F861FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1FF53F6B1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FF53F751FF5401800E12D4F /* HTTPMethod.swift in Sources */,
+				1FF53F6F1FF5329D00E12D4F /* Athlete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9821BEFF229002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C7901EB5B82D000D00A4 /* StravaAPIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9DD1BEFFF6E002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C7871EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1FF53F821FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
+				1FF53F691FF5329D00E12D4F /* Club.swift in Sources */,
+				1FF53F8D1FF5554700E12D4F /* Networking.swift in Sources */,
+				1FF53F7C1FF5477200E12D4F /* HTTPRequester.swift in Sources */,
+				1FF53F921FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
+				1FF53F881FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1FF53F6D1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FF53F771FF5401800E12D4F /* HTTPMethod.swift in Sources */,
+				1FF53F711FF5329D00E12D4F /* Athlete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6D9EB1BEFFFBE002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C7881EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1FF53F831FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
+				1FF53F6A1FF5329D00E12D4F /* Club.swift in Sources */,
+				1FF53F8E1FF5554700E12D4F /* Networking.swift in Sources */,
+				1FF53F7D1FF5477200E12D4F /* HTTPRequester.swift in Sources */,
+				1FF53F931FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
+				1FF53F891FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1FF53F6E1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FF53F781FF5401800E12D4F /* HTTPMethod.swift in Sources */,
+				1FF53F721FF5329D00E12D4F /* Athlete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D6DA0A1BF000BD002C0205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C7861EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1FF53F811FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
+				1FF53F681FF5329D00E12D4F /* Club.swift in Sources */,
+				1FF53F8C1FF5554700E12D4F /* Networking.swift in Sources */,
+				1FF53F7B1FF5477200E12D4F /* HTTPRequester.swift in Sources */,
+				1FF53F911FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
+				1FF53F871FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1FF53F6C1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FF53F761FF5401800E12D4F /* HTTPMethod.swift in Sources */,
+				1FF53F701FF5329D00E12D4F /* Athlete.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502761C68FCFC006590AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C78F1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD7502891C690C7A006590AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8933C78E1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52D6D9891BEFF229002C0205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D97B1BEFF229002C0205 /* StravaAPIClient-iOS */;
+			targetProxy = 52D6D9881BEFF229002C0205 /* PBXContainerItemProxy */;
+		};
+		DD7502811C68FCFC006590AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6DA0E1BF000BD002C0205 /* StravaAPIClient-macOS */;
+			targetProxy = DD7502801C68FCFC006590AF /* PBXContainerItemProxy */;
+		};
+		DD7502941C690C7A006590AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52D6D9EF1BEFFFBE002C0205 /* StravaAPIClient-tvOS */;
+			targetProxy = DD7502931C690C7A006590AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		52D6D98E1BEFF229002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52D6D98F1BEFF229002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52D6D9911BEFF229002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5618E79FFDB55404F51EE1D /* Pods-StravaAPIClientBase-StravaAPIClient-iOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-iOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52D6D9921BEFF229002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3932E4D141DCDFCD9CAB24CD /* Pods-StravaAPIClientBase-StravaAPIClient-iOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-iOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		52D6D9941BEFF229002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886E6E6622330A6F6A9BF547 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Configs/StravaAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52D6D9951BEFF229002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D0D423A305303A7E0A3BA3 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = Configs/StravaAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-iOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		52D6D9E81BEFFF6E002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF347F168EA04AF213582FC /* Pods-StravaAPIClientBase-StravaAPIClient-watchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-watchOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		52D6D9E91BEFFF6E002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05881B475E9B0B4BEED2A30A /* Pods-StravaAPIClientBase-StravaAPIClient-watchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-watchOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		52D6DA021BEFFFBE002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 644049B27D449699A32629DE /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-tvOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		52D6DA031BEFFFBE002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C006374382A8C36C1CF2D7B4 /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-tvOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		52D6DA211BF000BD002C0205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63673BB1C63E2416CB72BC8A /* Pods-StravaAPIClientBase-StravaAPIClient-macOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-macOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52D6DA221BF000BD002C0205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038958BFB3307824617D59B1 /* Pods-StravaAPIClientBase-StravaAPIClient-macOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Configs/StravaAPIClient.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-macOS";
+				PRODUCT_NAME = StravaAPIClient;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		DD7502831C68FCFC006590AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBACB13E2C16B18FD2C318C /* Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Configs/StravaAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		DD7502841C68FCFC006590AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF6000F340D7F63476ED0D1 /* Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Configs/StravaAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-macOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		DD7502961C690C7A006590AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 337A407E6270493BDB030B7E /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Configs/StravaAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		DD7502971C690C7A006590AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705B1444FE0A9DD869EEE47A /* Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = Configs/StravaAPIClientTests.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.StravaAPIClient.StravaAPIClient-tvOS-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52D6D9761BEFF229002C0205 /* Build configuration list for PBXProject "StravaAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D98E1BEFF229002C0205 /* Debug */,
+				52D6D98F1BEFF229002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6D9901BEFF229002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D9911BEFF229002C0205 /* Debug */,
+				52D6D9921BEFF229002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6D9931BEFF229002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D9941BEFF229002C0205 /* Debug */,
+				52D6D9951BEFF229002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6D9E71BEFFF6E002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6D9E81BEFFF6E002C0205 /* Debug */,
+				52D6D9E91BEFFF6E002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6DA011BEFFFBE002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6DA021BEFFFBE002C0205 /* Debug */,
+				52D6DA031BEFFFBE002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52D6DA201BF000BD002C0205 /* Build configuration list for PBXNativeTarget "StravaAPIClient-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52D6DA211BF000BD002C0205 /* Debug */,
+				52D6DA221BF000BD002C0205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7502821C68FCFC006590AF /* Build configuration list for PBXNativeTarget "StravaAPIClient-macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7502831C68FCFC006590AF /* Debug */,
+				DD7502841C68FCFC006590AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD7502951C690C7A006590AF /* Build configuration list for PBXNativeTarget "StravaAPIClient-tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7502961C690C7A006590AF /* Debug */,
+				DD7502971C690C7A006590AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52D6D9731BEFF229002C0205 /* Project object */;
+}

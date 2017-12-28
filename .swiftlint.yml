@@ -1,0 +1,52 @@
+disabled_rules: # rule identifiers to exclude from running
+  - line_length
+  - void_return
+  - closure_parameter_position
+  - private_over_fileprivate
+  #- large_tuple
+  #- empty_enum_arguments
+  - nesting
+included:
+  - Sources
+excluded:
+  - Pods
+opt_in_rules:
+  - empty_count
+  - todo
+  #- file_header
+  - unneeded_parentheses_in_closure_argument
+  #- explicit_init
+  - closure_spacing
+  #- overridden_super_call
+  - redundant_nil_coalescing
+  #- private_outlet
+  #- nimble_operator
+  #- attributes
+  - operator_usage_whitespace
+  - closure_end_indentation
+  #- first_where
+  - sorted_imports
+  #- object_literal
+  #- number_separator
+  #- prohibited_super_call
+
+file_header:
+  required_pattern: |
+    \/\/
+    \/\/  .*?\.swift
+    \/\/  StravaAPIClient
+    \/\/
+    \/\/  Created by .*? on \d{1,2}\/\d{1,2}\/\d{2,4}\.
+    \/\/  Copyright © \d{4} crsantos.info\. All rights reserved\.
+    \/\/
+
+line_length: 120
+number_separator:
+  minimum_length: 5
+identifier_name:
+  min_length: 3 # only min_length
+  error: 3 # only error
+  excluded: # excluded via string array
+    - id
+    - in
+    - URL

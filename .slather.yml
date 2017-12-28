@@ -1,0 +1,12 @@
+coverage_service: cobertura_xml
+xcodeproj: StravaAPIClient.xcodeproj
+workspace: StravaSwiftAPIClient.xcworkspace
+scheme: StravaAPIClient-iOS
+configuration: Debug
+source_directory: Sources
+output_directory: fastlane/reports/coverage/slather
+ignore:
+  - Tests/*
+  - scripts/*
+  - Pods/*
+  - Package.swift
