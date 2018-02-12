@@ -1,4 +1,0 @@
-test:
-  post:
-    - bundle exec slather
-    - bash <(curl -s https://codecov.io/bash) -f fastlane/reports/coverage/slather/cobertura.xml -X coveragepy -X gcov -X xcode
