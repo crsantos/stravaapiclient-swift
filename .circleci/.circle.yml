@@ -17,6 +17,11 @@ jobs:
     steps:
       - checkout
 
+      # Restore bundle cache
+      - restore_cache:
+          keys:
+          - stravaapiclient-swift-{{ checksum "Gemfile.lock" }}
+          - stravaapiclient-swift
       - run:
         name: Bundle install
         command: bundle check || bundle install
@@ -43,3 +48,9 @@ jobs:
       - store_artifacts:
           path: ~/Library/Logs/scan
           destination: scan-logs
+      # Store bundle cache
+      - save_cache:
+        key: stravaapiclient-swift-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
