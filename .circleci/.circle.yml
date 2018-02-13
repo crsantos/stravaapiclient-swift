@@ -7,6 +7,10 @@
 # Check https://circleci.com/docs/2.0/ios-migrating-from-1-2/ for more details
 #
 version: 2
+
+dependencies:
+  pre:
+    - sudo ruby-install ruby $(cat .ruby-version)
 jobs:
   build_and_test:
 
