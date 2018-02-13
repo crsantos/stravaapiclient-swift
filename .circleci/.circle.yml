@@ -8,11 +8,11 @@
 #
 version: 2
 jobs:
-  build:
+  build_and_test:
 
     # Specify the Xcode version to use
     macos:
-      xcode: "9.2"
+      xcode: "9.2.0"
 
     steps:
       - checkout
