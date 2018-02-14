@@ -92,6 +92,8 @@
 		06C3E0B63DE6437EA8E180D5 /* Pods_StravaAPIClient_StravaAPIClient_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF7521835B60103FA608EF4 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-watchOS/Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1D954D7C3686D2627FF83BB2 /* Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS/Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1F407E52203332C3002C9192 /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
+		1F407E5320333302002C9192 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = StravaAPIClient.podspec; sourceTree = "<group>"; };
 		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
 		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
@@ -217,6 +219,8 @@
 		1F5EA43E1FF51B9100ED872E /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				1F407E5320333302002C9192 /* fastlane */,
+				1F407E52203332C3002C9192 /* .circleci */,
 				1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */,
 				1FF53F5B1FF531B200E12D4F /* swiftlint.sh */,
 				1FF53F601FF531D800E12D4F /* .swiftlint.yml */,

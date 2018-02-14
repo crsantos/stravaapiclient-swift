@@ -29,6 +29,8 @@ platform :ios do
   desc "Calculate code coverage"
   private_lane :generate_test_coverage do
 
-    slather(html: true)
+    slather(html: true, cobertura_xml: true, use_bundle_exec: true)
+    codecov(path: "fastlane/reports/coverage/slather/cobertura.xml")
+    #sh "curl -s https://codecov.io/bash -f fastlane/reports/coverage/slather/cobertura.xml -X coveragepy -X gcov -X xcode"
   end
 end
