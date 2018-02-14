@@ -8,33 +8,38 @@
 #
 version: 2
 
-dependencies:
-  pre:
-    - sudo ruby-install ruby $(cat .ruby-version)
 jobs:
-  build_and_test:
-
     # Specify the Xcode version to use
     macos:
-      xcode: "9.2.0"
-
+        xcode: "9.2.0"
+    environment:
+      CIRCLE_TEST_REPORTS: ~/test-reports
+      LC_ALL: en_US.UTF-8
+      LANG: en_US.UTF-8
+  build_and_test:
     steps:
       - checkout
 
       # Restore bundle cache
       - restore_cache:
+        key: v1-macos-gems-{{ checksum "Gemfile" }}-{{ checksum "fastlane.gemspec" }}
+      - restore_cache:
           keys:
-          - stravaapiclient-swift-{{ checksum "Gemfile.lock" }}
-          - stravaapiclient-swift
+            - v3-homebrew-{{ epoch }}
+            - v3-homebrew
       - run:
-        name: Bundle install
-        command: bundle check || bundle install
+          name: Bundle install
+          command: |
+            mkdir -p ~/test-reports
+            gem update --system
+            brew install shellcheck
+            bundle check --path .bundle || bundle install --jobs=4 --retry=3 --path .bundle
         environment:
           BUNDLE_JOBS: 4
           BUNDLE_RETRY: 3
           # This is the path where all the gems will be installed, and
           # which CircleCI will later cache.
-          BUNDLE_PATH: vendor/bundle
+          BUNDLE_PATH: .bundle
 
       # Build the app and run tests
       - run:
@@ -54,7 +59,10 @@ jobs:
           destination: scan-logs
       # Store bundle cache
       - save_cache:
-        key: stravaapiclient-swift-{{ checksum "Gemfile.lock" }}
+        key: v3-homebrew-{{ epoch }}
         paths:
-          - vendor/bundle
-
+          - /usr/local/Homebrew
+      - save_cache:
+          key: v1-macos-gems-{{ checksum "Gemfile" }}-{{ checksum "fastlane.gemspec" }}
+          paths:
+            - .bundle
