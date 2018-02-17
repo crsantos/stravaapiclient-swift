@@ -27,7 +27,9 @@ jobs:
             - v3-homebrew
       - run:
           name: Install ruby version
-          command: ruby-install 2.4.1
+          command: |
+            ruby-install 2.4.1
+            gem install bundler
       - run:
           name: Bundle install
           command: |
