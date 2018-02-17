@@ -12,6 +12,7 @@ jobs:
     # Specify the Xcode version to use
     macos:
         xcode: "9.2.0"
+    shell: /bin/bash --login -eo pipefail
     environment:
       CIRCLE_TEST_REPORTS: ~/test-reports
       LC_ALL: en_US.UTF-8
@@ -27,11 +28,11 @@ jobs:
             keys:
               - v3-homebrew-{{ epoch }}
               - v3-homebrew
-        - run:
-            name: Install Homebrew and Ruby Dependencies
-            command: |
-              brew install rbenv ruby-build shellcheck
-              ruby-build 2.4.1
+        # - run:
+        #     name: Install Homebrew and Ruby Dependencies
+        #     command: |
+        #       brew install rbenv ruby-build shellcheck
+        #       ruby-build 2.4.1
         - run:
             name: Bundle install
             command: |
