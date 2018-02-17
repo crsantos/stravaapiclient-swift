@@ -48,7 +48,7 @@ GEM
     cocoapods-try (1.1.0)
     colored (1.2)
     colored2 (3.1.2)
-    commander-fastlane (4.4.5)
+    commander-fastlane (4.4.6)
       highline (~> 1.7.2)
     concurrent-ruby (1.0.5)
     declarative (0.0.10)
@@ -122,7 +122,7 @@ GEM
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     httpclient (2.8.3)
-    i18n (0.9.4)
+    i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     json (2.1.0)
     jwt (2.1.0)
@@ -206,7 +206,7 @@ DEPENDENCIES
   slather (~> 2.4.4)
 
 RUBY VERSION
-   ruby 2.4.1p111
+   ruby 2.4.2p198
 
 BUNDLED WITH
    1.16.1
