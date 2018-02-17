@@ -39,6 +39,14 @@
                BlueprintName = "StravaAPIClient-iOS Tests"
                ReferencedContainer = "container:StravaAPIClient.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "StravaAPIClientIntegrationTests">
+               </Test>
+               <Test
+                  Identifier = "StravaAPIClientTests/testBootAPIClient()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

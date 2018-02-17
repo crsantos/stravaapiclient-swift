@@ -1,0 +1,111 @@
+{
+    "id": 3246330,
+    "username": null,
+    "resource_state": 3,
+    "firstname": "Carlos",
+    "lastname": "Ricardo",
+    "city": "Porto",
+    "state": "Porto District",
+    "country": "Portugal",
+    "sex": "M",
+    "premium": false,
+    "created_at": "2014-03-23T14:56:03Z",
+    "updated_at": "2017-12-26T20:47:48Z",
+    "badge_type_id": 0,
+    "profile_medium": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/4246969/1483887/3/medium.jpg",
+    "profile": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/4246969/1483887/3/large.jpg",
+    "friend": null,
+    "follower": null,
+    "email": "carlosricardosantos@gmail.com",
+    "follower_count": 128,
+    "friend_count": 219,
+    "mutual_friend_count": 0,
+    "athlete_type": 1,
+    "date_preference": "%m/%d/%Y",
+    "measurement_preference": "meters",
+    "clubs": [
+        {
+            "id": 53850,
+            "resource_state": 2,
+            "name": "ASICS Run Club",
+            "profile_medium": "https://dgalywyr863hv.cloudfront.net/pictures/clubs/53850/1275851/1/medium.jpg",
+            "profile": "https://dgalywyr863hv.cloudfront.net/pictures/clubs/53850/1275851/1/large.jpg",
+            "cover_photo": null,
+            "cover_photo_small": null,
+            "sport_type": "running",
+            "city": "Irvine",
+            "state": "California",
+            "country": "United States",
+            "private": false,
+            "member_count": 5295,
+            "featured": false,
+            "verified": false,
+            "url": "ASICSAmerica",
+            "membership": "member",
+            "admin": false,
+            "owner": false
+        },
+        {
+            "id": 255775,
+            "resource_state": 2,
+            "name": "Garmin Forerunners",
+            "profile_medium": "https://dgalywyr863hv.cloudfront.net/pictures/clubs/255775/5639309/5/medium.jpg",
+            "profile": "https://dgalywyr863hv.cloudfront.net/pictures/clubs/255775/5639309/5/large.jpg",
+            "cover_photo": "https://dgalywyr863hv.cloudfront.net/pictures/clubs/255775/5639291/1/large.jpg",
+            "cover_photo_small": "https://dgalywyr863hv.cloudfront.net/pictures/clubs/255775/5639291/1/small.jpg",
+            "sport_type": "running",
+            "city": "Olathe",
+            "state": "Kansas",
+            "country": "United States",
+            "private": false,
+            "member_count": 19692,
+            "featured": false,
+            "verified": true,
+            "url": "garminforerunner",
+            "membership": "member",
+            "admin": false,
+            "owner": false
+        }
+    ],
+    "ftp": null,
+    "weight": 75.5,
+    "bikes": [
+        {
+            "id": "b1277412",
+            "primary": true,
+            "name": "Scott Scale 950 (2013)",
+            "resource_state": 2,
+            "distance": 346329
+        }
+    ],
+    "shoes": [
+        {
+            "id": "g1915196",
+            "primary": false,
+            "name": "ASICS Nimbus 18",
+            "resource_state": 2,
+            "distance": 524532
+        },
+        {
+            "id": "g2331015",
+            "primary": false,
+            "name": "ASICS Gel Venture - 5",
+            "resource_state": 2,
+            "distance": 67385
+        },
+        {
+            "id": "g2519870",
+            "primary": true,
+            "name": "adidas UltraBoost Adidas Ultraboost",
+            "resource_state": 2,
+            "distance": 481184
+        },
+        {
+            "id": "g2896361",
+            "primary": false,
+            "name": "La Sportiva Bushido Bushido",
+            "resource_state": 2,
+            "distance": 71104
+        }
+    ]
+}

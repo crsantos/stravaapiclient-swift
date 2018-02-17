@@ -40,6 +40,18 @@
 		1F52BD4A2038A77200F00ADC /* SplitsMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD482038A77200F00ADC /* SplitsMetric.swift */; };
 		1F52BD4B2038A77200F00ADC /* SplitsMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD482038A77200F00ADC /* SplitsMetric.swift */; };
 		1F52BD4C2038A77200F00ADC /* SplitsMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD482038A77200F00ADC /* SplitsMetric.swift */; };
+		1F52BD4F2038BA1C00F00ADC /* athlete_activities_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */; };
+		1F52BD502038BA1C00F00ADC /* athlete_activities_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */; };
+		1F52BD512038BA1C00F00ADC /* athlete_activities_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */; };
+		1F52BD532038BB8400F00ADC /* StravaAPIClientMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD522038BB8400F00ADC /* StravaAPIClientMockTests.swift */; };
+		1F52BD542038BB8400F00ADC /* StravaAPIClientMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD522038BB8400F00ADC /* StravaAPIClientMockTests.swift */; };
+		1F52BD552038BB8400F00ADC /* StravaAPIClientMockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD522038BB8400F00ADC /* StravaAPIClientMockTests.swift */; };
+		1F52BD572038BC9400F00ADC /* current_athlete_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F52BD562038BC9400F00ADC /* current_athlete_200.json */; };
+		1F52BD582038BC9400F00ADC /* current_athlete_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F52BD562038BC9400F00ADC /* current_athlete_200.json */; };
+		1F52BD592038BC9400F00ADC /* current_athlete_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F52BD562038BC9400F00ADC /* current_athlete_200.json */; };
+		1F52BD5B2038BDB200F00ADC /* XCTestCase+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD5A2038BDB200F00ADC /* XCTestCase+Load.swift */; };
+		1F52BD5C2038BDB200F00ADC /* XCTestCase+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD5A2038BDB200F00ADC /* XCTestCase+Load.swift */; };
+		1F52BD5D2038BDB200F00ADC /* XCTestCase+Load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F52BD5A2038BDB200F00ADC /* XCTestCase+Load.swift */; };
 		1FF53F671FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
 		1FF53F681FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
 		1FF53F691FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
@@ -84,9 +96,9 @@
 		8933C7861EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
 		8933C7871EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
 		8933C7881EB5B820000D00A4 /* StravaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */; };
-		8933C78E1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */; };
-		8933C78F1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */; };
-		8933C7901EB5B82D000D00A4 /* StravaAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */; };
+		8933C78E1EB5B82C000D00A4 /* StravaAPIClientIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientIntegrationTests.swift */; };
+		8933C78F1EB5B82C000D00A4 /* StravaAPIClientIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientIntegrationTests.swift */; };
+		8933C7901EB5B82D000D00A4 /* StravaAPIClientIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* StravaAPIClientIntegrationTests.swift */; };
 		9592864A14E9248AF5C787F0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB2CA0625B01B6A130314D0 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS_Tests.framework */; };
 		AECBDE462FB102B5CE323C98 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6984C4AD4C3D1EC336152649 /* Pods_StravaAPIClientBase_StravaAPIClient_tvOS.framework */; };
 		DD7502881C68FEDE006590AF /* StravaAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D6DA0F1BF000BD002C0205 /* StravaAPIClient.framework */; };
@@ -134,6 +146,10 @@
 		1F52BD3E2038A65000F00ADC /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		1F52BD432038A65D00F00ADC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		1F52BD482038A77200F00ADC /* SplitsMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitsMetric.swift; sourceTree = "<group>"; };
+		1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = athlete_activities_200.json; sourceTree = "<group>"; };
+		1F52BD522038BB8400F00ADC /* StravaAPIClientMockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StravaAPIClientMockTests.swift; sourceTree = "<group>"; };
+		1F52BD562038BC9400F00ADC /* current_athlete_200.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200.json; sourceTree = "<group>"; };
+		1F52BD5A2038BDB200F00ADC /* XCTestCase+Load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Load.swift"; sourceTree = "<group>"; };
 		1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = StravaAPIClient.podspec; sourceTree = "<group>"; };
 		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
 		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
@@ -169,7 +185,7 @@
 		83B7424CF8BD70FD31536F3C /* Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClientBase_StravaAPIClient_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		886E6E6622330A6F6A9BF547 /* Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8933C7841EB5B820000D00A4 /* StravaAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaAPIClient.swift; sourceTree = "<group>"; };
-		8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaAPIClientTests.swift; sourceTree = "<group>"; };
+		8933C7891EB5B82A000D00A4 /* StravaAPIClientIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StravaAPIClientIntegrationTests.swift; sourceTree = "<group>"; };
 		8CDFAB16BE4F8CF467D001B5 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-watchOS/Pods-StravaAPIClient-StravaAPIClient-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		954536A81F82745B9239EF3B /* Pods_StravaAPIClient_StravaAPIClient_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8151FC0971818C8A068295E /* Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS Tests/Pods-StravaAPIClient-StravaAPIClient-iOS Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +272,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F52BD4D2038B9F900F00ADC /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */,
+				1F52BD562038BC9400F00ADC /* current_athlete_200.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		1F5EA43E1FF51B9100ED872E /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -414,7 +439,10 @@
 		8933C7831EB5B7EB000D00A4 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				8933C7891EB5B82A000D00A4 /* StravaAPIClientTests.swift */,
+				1F52BD4D2038B9F900F00ADC /* Mocks */,
+				8933C7891EB5B82A000D00A4 /* StravaAPIClientIntegrationTests.swift */,
+				1F52BD522038BB8400F00ADC /* StravaAPIClientMockTests.swift */,
+				1F52BD5A2038BDB200F00ADC /* XCTestCase+Load.swift */,
 			);
 			name = Tests;
 			path = Tests/StravaAPIClientTests;
@@ -708,6 +736,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F52BD572038BC9400F00ADC /* current_athlete_200.json in Resources */,
+				1F52BD4F2038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +766,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F52BD582038BC9400F00ADC /* current_athlete_200.json in Resources */,
+				1F52BD502038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +775,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F52BD592038BC9400F00ADC /* current_athlete_200.json in Resources */,
+				1F52BD512038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1086,7 +1120,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C7901EB5B82D000D00A4 /* StravaAPIClientTests.swift in Sources */,
+				1F52BD5B2038BDB200F00ADC /* XCTestCase+Load.swift in Sources */,
+				1F52BD532038BB8400F00ADC /* StravaAPIClientMockTests.swift in Sources */,
+				8933C7901EB5B82D000D00A4 /* StravaAPIClientIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1169,7 +1205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C78F1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */,
+				1F52BD5C2038BDB200F00ADC /* XCTestCase+Load.swift in Sources */,
+				1F52BD542038BB8400F00ADC /* StravaAPIClientMockTests.swift in Sources */,
+				8933C78F1EB5B82C000D00A4 /* StravaAPIClientIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1177,7 +1215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8933C78E1EB5B82C000D00A4 /* StravaAPIClientTests.swift in Sources */,
+				1F52BD5D2038BDB200F00ADC /* XCTestCase+Load.swift in Sources */,
+				1F52BD552038BB8400F00ADC /* StravaAPIClientMockTests.swift in Sources */,
+				8933C78E1EB5B82C000D00A4 /* StravaAPIClientIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

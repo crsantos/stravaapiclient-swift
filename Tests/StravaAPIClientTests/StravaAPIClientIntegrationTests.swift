@@ -1,5 +1,5 @@
 //
-//  StravaAPIClientTests.swift
+//  StravaAPIClientIntegrationTests.swift
 //  crsantos.info
 //
 //  Created by Carlos Santos on 28/12/2017.
@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 @testable import StravaAPIClient
 
-class StravaAPIClientTests: XCTestCase {
+class StravaAPIClientIntegrationTests: XCTestCase {
 
     fileprivate enum Constants {
 
