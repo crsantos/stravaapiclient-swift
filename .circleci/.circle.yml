@@ -20,8 +20,6 @@ jobs:
     build_and_test:
       steps:
         - checkout
-
-        # Restore bundle cache
         - restore_cache:
           key: v1-macos-gems-{{ checksum "Gemfile" }}-{{ checksum "fastlane.gemspec" }}
         - restore_cache:
@@ -29,10 +27,9 @@ jobs:
               - v3-homebrew-{{ epoch }}
               - v3-homebrew
         - run:
-            name: Install Homebrew and Ruby Dependencies
+            name: Install ruby version
             command: |
-              brew install rbenv ruby-build shellcheck
-              ruby-build 2.4.1
+              chruby 2.4.1
         - run:
             name: Bundle install
             command: |
