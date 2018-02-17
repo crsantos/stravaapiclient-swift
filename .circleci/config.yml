@@ -20,15 +20,15 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          key: v1-macos-gems-{{ checksum "Gemfile" }}-{{ checksum "fastlane.gemspec" }}
+          key: v1-macos-gems-{{ checksum "Gemfile.lock" }}
       - restore_cache:
           keys:
             - v3-homebrew-{{ epoch }}
             - v3-homebrew
-      # - run:
-      #     name: Install ruby version
-      #     command: |
-      #       chruby 2.4.1
+      - run:
+          name: Install ruby version
+          command: |
+            chruby 2.4.1
       - run:
           name: Bundle install
           command: |
@@ -65,7 +65,7 @@ jobs:
           paths:
             - /usr/local/Homebrew
       - save_cache:
-          key: v1-macos-gems-{{ checksum "Gemfile" }}-{{ checksum "fastlane.gemspec" }}
+          key: v1-macos-gems-{{ checksum "Gemfile.lock" }}
           paths:
             - .bundle
 workflows:
