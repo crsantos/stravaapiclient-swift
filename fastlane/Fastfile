@@ -14,6 +14,7 @@ platform :ios do
   desc "Runs tests and generates coverage report"
   lane :test do |options|
 
+    lint_pod
     compile_and_test(scheme: options[:scheme])
     generate_test_coverage
   end
@@ -22,13 +23,18 @@ platform :ios do
 
   desc "Run tests"
   private_lane :compile_and_test do |options|
-
     scan(scheme: options[:scheme])
   end
 
+  desc "Cocoapods pod lib lint"
+  private_lane :lint_pod do
+    pod_lib_lint(
+      allow_warnings: true
+    )
+end
+
   desc "Calculate code coverage"
   private_lane :generate_test_coverage do
-
     slather(html: true, cobertura_xml: true, use_bundle_exec: true)
     codecov(path: "fastlane/reports/coverage/slather/cobertura.xml")
     #sh "curl -s https://codecov.io/bash -f fastlane/reports/coverage/slather/cobertura.xml -X coveragepy -X gcov -X xcode"
