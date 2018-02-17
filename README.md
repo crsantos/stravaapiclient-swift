@@ -1,6 +1,6 @@
 # StravaAPIClient
 
-[![CircleCI](https://img.shields.io/circleci/project/github/crsantos/stravaapiclient-swift.svg)]() [![Coveralls github](https://img.shields.io/coveralls/github/crsantos/stravaapiclient-swift.svg)]()
+[![CircleCI](https://img.shields.io/circleci/project/github/crsantos/stravaapiclient-swift.svg)](https://circleci.com/gh/crsantos/stravaapiclient-swift) [![Coveralls github](https://img.shields.io/coveralls/github/crsantos/stravaapiclient-swift.svg)](https://codecov.io/gh/crsantos/stravaapiclient-swift)
 
 Simple and lightweight NSURLSession wrapper around Strava API.
 
