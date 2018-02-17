@@ -28,14 +28,15 @@ jobs:
               - v3-homebrew-{{ epoch }}
               - v3-homebrew
         - run:
-            name: Install Homebrew Dependencies
-            command: brew install rbenv ruby-build
+            name: Install Homebrew and Ruby Dependencies
+            command: |
+              brew install rbenv ruby-build shellcheck
+              ruby-build 2.4.1
         - run:
             name: Bundle install
             command: |
               mkdir -p ~/test-reports
               gem update --system
-              brew install shellcheck
               bundle check --path .bundle || bundle install --jobs=4 --retry=3 --path .bundle
           environment:
             BUNDLE_JOBS: 4
