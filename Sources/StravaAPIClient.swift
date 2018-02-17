@@ -8,15 +8,6 @@
 
 import Foundation
 
-// TODO:
-// ~ 1- obtain access token from: https://www.strava.com/oauth/authorize?client_id=9&response_type=code&redirect_uri=http://localhost/token_exchange.php&approval_prompt=force
-// ~ 2- configure POSTMan with access Token
-// ~ 3- network layer - request<T> completion: Result<T,Error>
-// 3.1- network config init with creds
-// ~ 4- Router
-// ~ 5- request with generic methods
-// 6 - Inject headers
-
 public struct StravaConfig: AuthenticatableConfig {
 
     let clientId: String
@@ -39,5 +30,10 @@ public class StravaAPIClient {
     func requestCurrentAthlete(with completion: @escaping APICompletion<Athlete>) {
 
         self.networking.request(with: StravaAPIRouter.getCurrentAthlete, completion: completion)
+    }
+
+    func requestCurrentAthleteActivities(with completion: @escaping APICompletion<[SummaryActivity]>) {
+
+        self.networking.request(with: StravaAPIRouter.getCurrentAthleteActivities, completion: completion)
     }
 }

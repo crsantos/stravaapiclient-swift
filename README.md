@@ -27,11 +27,22 @@ let config = StravaConfig(
 )
 let client = StravaAPIClient(with: config)
 
+// get current auth'd athlete
 self.client.requestCurrentAthlete { result in
 
     if case let .success(athlete) = result {
 
         // use athlete
+    }
+}
+
+// or get activities
+
+self.client.requestCurrentAthleteActivities { result in
+
+    if case let .success(activities) = result {
+
+        // use list of activities
     }
 }
 ```
@@ -43,6 +54,10 @@ This is still a WIP,  but I will add new requests **soon**.
 #### `GET https://www.strava.com/api/v3/athlete`
 
 * `/athlete` - Returns the authenticated athlete, retrieving an `Athlete` object
+
+#### `GET https://www.strava.com/api/v3/athlete/activities`
+
+* `/athlete/activitie` - Returns the authenticated athlete's activity summaries, retrieving an `ActivitySummary` list
 
 ### TODO
 

@@ -17,6 +17,7 @@ enum StravaAPIRouter {
     }
 
     case getCurrentAthlete
+    case getCurrentAthleteActivities
 }
 
 // MARK: - URLResourceRequestConvertible
@@ -48,6 +49,10 @@ fileprivate extension StravaAPIRouter {
         case .getCurrentAthlete:
 
             return "athlete"
+
+        case .getCurrentAthleteActivities:
+
+            return "athlete/activities"
         }
     }
 
@@ -61,6 +66,10 @@ fileprivate extension StravaAPIRouter {
         switch self {
 
         case .getCurrentAthlete:
+
+            return .get
+
+        case .getCurrentAthleteActivities:
 
             return .get
         }

@@ -12,7 +12,7 @@ Some missing tasks:
     - [ ] [List Activity Comments](https://developers.strava.com/docs/reference/#api-Activities-getCommentsByActivityId)
     - [ ] [List Activity Kudoers](https://developers.strava.com/docs/reference/#api-Activities-getKudoersByActivityId)
     - [ ] [List Activity Laps](https://developers.strava.com/docs/reference/#api-Activities-getLapsByActivityId)
-    - [ ] [List Athlete Activities](https://developers.strava.com/docs/reference/#api-Activities-getLoggedInAthleteActivities)
+    - [x] [List Athlete Activities](https://developers.strava.com/docs/reference/#api-Activities-getLoggedInAthleteActivities)
     - [ ] [Get Activity Zones](https://developers.strava.com/docs/reference/#api-Activities-getZonesByActivityId)
     - [ ] [Update Activity](https://developers.strava.com/docs/reference/#api-Activities-updateActivityById)
   - [Athletes](https://developers.strava.com/docs/reference/#api-Athletes)

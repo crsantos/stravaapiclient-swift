@@ -48,6 +48,19 @@ class StravaAPIClientTests: XCTestCase {
             }
             expectation.fulfill()
         }
-        self.wait(for: [expectation], timeout: 2.0)
+        let expectation2 = XCTestExpectation(description: "requestCurrentAthleteActivities")
+        self.client.requestCurrentAthleteActivities { result in
+
+            if case let .success(activities) = result {
+
+                debugPrint("Got Activities: \(activities)")
+
+            } else if case let .failure(error) = result {
+
+                debugPrint("Error: \(error)")
+            }
+            expectation2.fulfill()
+        }
+        self.wait(for: [expectation, expectation2], timeout: 2.0)
     }
 }
