@@ -29,7 +29,6 @@ jobs:
           name: Install ruby version
           command: |
             ruby-build --definitions
-            chruby 2.4.1
       - run:
           name: Bundle install
           command: |
