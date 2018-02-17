@@ -1,5 +1,8 @@
 # StravaAPIClient
 
+![MIT Licence](https://img.shields.io/badge/license-MIT-blue.svg)
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/stravaapiclient-swift.svg)](https://img.shields.io/cocoapods/v/stravaapiclient-swift.svg)
+[![Platform](https://img.shields.io/cocoapods/p/stravaapiclient-swift.svg?style=flat)](http://cocoadocs.org/docsets/stravaapiclient-swift)
 [![CircleCI](https://img.shields.io/circleci/project/github/crsantos/stravaapiclient-swift.svg)](https://circleci.com/gh/crsantos/stravaapiclient-swift) [![Coveralls github](https://img.shields.io/coveralls/github/crsantos/stravaapiclient-swift.svg)](https://codecov.io/gh/crsantos/stravaapiclient-swift)
 
 Simple and lightweight NSURLSession wrapper around Strava API.
