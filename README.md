@@ -43,8 +43,4 @@ This is still a WIP,  but I will add new requests **soon**.
 
 ### TODO
 
-Some missing tasks:
-
-- [ ] Add more endpoints
-- [ ] Add mock tests for those endpoints
-- [ ] Add CI integration
+Please check [TODO.md](./TODO.md) doc

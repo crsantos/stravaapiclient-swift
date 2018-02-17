@@ -1,0 +1,55 @@
+# TODO
+
+Some missing tasks:
+
+- [x] Add basic CI integration
+- [ ] Carthage support
+- [ ] SPM support
+- [ ] pod lib lint on CI - via fastlane
+- Add more endpoints:
+  - [Activities](https://developers.strava.com/docs/reference/#api-Activities)
+    - [ ] [Get Activity](https://developers.strava.com/docs/reference/#api-Activities-getActivityById)
+    - [ ] [List Activity Comments](https://developers.strava.com/docs/reference/#api-Activities-getCommentsByActivityId)
+    - [ ] [List Activity Kudoers](https://developers.strava.com/docs/reference/#api-Activities-getKudoersByActivityId)
+    - [ ] [List Activity Laps](https://developers.strava.com/docs/reference/#api-Activities-getLapsByActivityId)
+    - [ ] [List Athlete Activities](https://developers.strava.com/docs/reference/#api-Activities-getLoggedInAthleteActivities)
+    - [ ] [Get Activity Zones](https://developers.strava.com/docs/reference/#api-Activities-getZonesByActivityId)
+    - [ ] [Update Activity](https://developers.strava.com/docs/reference/#api-Activities-updateActivityById)
+  - [Athletes](https://developers.strava.com/docs/reference/#api-Athletes)
+    - [x] [Get Authenticated Athlete](https://developers.strava.com/docs/reference/#api-Athletes-getLoggedInAthlete)
+    - [ ] [Get Zones](https://developers.strava.com/docs/reference/#api-Athletes-getLoggedInAthleteZones)
+    - [ ] [Get Athlete Stats](https://developers.strava.com/docs/reference/#api-Athletes-getStats)
+    - [ ] [Update Athlete](https://developers.strava.com/docs/reference/#api-Athletes-updateLoggedInAthlete)
+  - [Clubs](https://developers.strava.com/docs/reference/#api-Clubs)
+    - [ ] [List Club Activities](https://developers.strava.com/docs/reference/#api-Clubs-getClubActivitiesById)
+    - [ ] [List Club Administrators.](https://developers.strava.com/docs/reference/#api-Clubs-getClubAdminsById)
+    - [ ] [Get Club](https://developers.strava.com/docs/reference/#api-Clubs-getClubById)
+    - [ ] [List Club Members](https://developers.strava.com/docs/reference/#api-Clubs-getClubMembersById)
+    - [ ] [List Athlete Clubs](https://developers.strava.com/docs/reference/#api-Clubs-getLoggedInAthleteClubs)
+    - [ ] [Join Club](https://developers.strava.com/docs/reference/#api-Clubs-joinClubById)
+    - [ ] [Leave Club](https://developers.strava.com/docs/reference/#api-Clubs-leaveClubById)
+  - [Gears](https://developers.strava.com/docs/reference/#api-Gears)
+    - [ ] [Get Equipment](https://developers.strava.com/docs/reference/#api-Gears-getGearById)
+  - [Routes](https://developers.strava.com/docs/reference/#api-Routes)
+    - [ ] [Get Route](https://developers.strava.com/docs/reference/#api-Routes-getRouteById)
+    - [ ] [List Athlete Routes](https://developers.strava.com/docs/reference/#api-Routes-getRoutesByAthleteId)
+  - [RunningRaces](https://developers.strava.com/docs/reference/#api-RunningRaces)
+    - [ ] [Get Running Race](https://developers.strava.com/docs/reference/#api-RunningRaces-getRunningRaceById)
+    - [ ] [List Running Races](https://developers.strava.com/docs/reference/#api-RunningRaces-getRunningRaces)
+  - [SegmentEfforts](https://developers.strava.com/docs/reference/#api-SegmentEfforts)
+    - [ ] [List Segment Efforts](https://developers.strava.com/docs/reference/#api-SegmentEfforts-getEffortsBySegmentId)
+    - [ ] [Get Segment Effort](https://developers.strava.com/docs/reference/#api-SegmentEfforts-getSegmentEffortById)
+  - [Segments](https://developers.strava.com/docs/reference/#api-Segments)
+    - [ ] [Explore segments](https://developers.strava.com/docs/reference/#api-Segments-exploreSegments)
+    - [ ] [Get Segment Leaderboard](https://developers.strava.com/docs/reference/#api-Segments-getLeaderboardBySegmentId)
+    - [ ] [List Starred Segments](https://developers.strava.com/docs/reference/#api-Segments-getLoggedInAthleteStarredSegments)
+    - [ ] [Get Segment](https://developers.strava.com/docs/reference/#api-Segments-getSegmentById)
+    - [ ] [Star Segment](https://developers.strava.com/docs/reference/#api-Segments-starSegment)
+  - [Streams](https://developers.strava.com/docs/reference/#api-Streams)
+    - [ ] [Get Activity Streams](https://developers.strava.com/docs/reference/#api-Streams-getActivityStreams)
+    - [ ] [Get segment effort streams](https://developers.strava.com/docs/reference/#api-Streams-getSegmentEffortStreams)
+    - [ ] [Get Segment Streams](https://developers.strava.com/docs/reference/#api-Streams-getSegmentStreams)
+  - [Uploads](https://developers.strava.com/docs/reference/#api-Uploads)
+    - [ ] [Upload Activity](https://developers.strava.com/docs/reference/#api-Uploads-createUpload)
+    - [ ] [Get Upload](https://developers.strava.com/docs/reference/#api-Uploads-getUploadById)
+- [ ] Add mock tests for those endpoints
