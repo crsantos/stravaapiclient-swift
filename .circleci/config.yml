@@ -25,10 +25,10 @@ jobs:
           keys:
             - v3-homebrew-{{ epoch }}
             - v3-homebrew
-      - run:
-          name: Install bundler
-          command: |
-            gem install bundler # ruby-install 2.4.1
+      # - run:
+      #     name: Install bundler
+      #     command: |
+      #       gem install bundler # ruby-install 2.4.1
             
       - run:
           name: Bundle install
