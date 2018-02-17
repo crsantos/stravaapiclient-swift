@@ -24,6 +24,7 @@ public typealias APICompletion<T: Codable> = (Result<T, NetworkingError>) -> ()
 public enum NetworkingError: Error {
 
     case generic
+    case emptyData
     case underlyingErrorResponse(Error, URLResponse)
     case underlyingError(Error)
     case parsingError(ParseError)
@@ -75,6 +76,12 @@ fileprivate extension Networking {
 
         } else if let data = data {
 
+            guard data.isEmpty == false else {
+
+                completion(.failure(.emptyData))
+                return
+            }
+
             do {
 
                 let object = try JSONDecoder().decode(T.self, from: data)
@@ -82,11 +89,8 @@ fileprivate extension Networking {
 
             } catch let error {
 
-                debugPrint("error:: \(error)")
                 completion(.failure(.parsingError(.decode(error))))
             }
-
-            debugPrint(String(data: data, encoding: .utf8) ?? "N/A")
 
         } else {
 
