@@ -28,7 +28,7 @@ jobs:
       - run:
           name: Install ruby version
           command: |
-            ruby-build --definitions
+            ruby-install 2.4.1
       - run:
           name: Bundle install
           command: |
