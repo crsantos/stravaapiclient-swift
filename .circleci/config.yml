@@ -9,7 +9,7 @@
 version: 2
 
 jobs:
-  build_and_test:
+  build-and-test:
     macos:
       xcode: "9.2.0"
     shell: /bin/bash --login -eo pipefail
@@ -68,3 +68,8 @@ jobs:
           key: v1-macos-gems-{{ checksum "Gemfile" }}-{{ checksum "fastlane.gemspec" }}
           paths:
             - .bundle
+workflows:
+  version: 2
+  buildtest:
+    jobs:
+    - build-and-test
