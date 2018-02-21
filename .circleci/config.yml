@@ -48,7 +48,7 @@ jobs:
       # and save the same XML files under test-results folder
       # in the Artifacts tab
       - store_test_results:
-          path: fastlane/reports/coverage/slather/report.xml
+          path: fastlane/reports/coverage/slather/cobertura.xml
       - store_artifacts:
           path: fastlane/reports/test-results
           destination: scan-test-results
