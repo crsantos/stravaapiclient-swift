@@ -58,7 +58,7 @@ This is still a WIP,  but I will add new requests **soon**.
 
 #### `GET /athlete/activities`
 
-* Returns the authenticated athlete's activity summaries, retrieving an [`ActivitySummary`](Sources/Models/ActivitySummary.swift) list
+* Returns the authenticated athlete's activity summaries, retrieving an [`SummaryActivity`](Sources/Models/SummaryActivity.swift) list
 
 #### `GET /athletes/:id/stats`
 
