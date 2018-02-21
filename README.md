@@ -54,15 +54,15 @@ This is still a WIP,  but I will add new requests **soon**.
 
 #### `GET /athlete`
 
-* Returns the authenticated athlete, retrieving an `Athlete` object
+* Returns the authenticated athlete, retrieving an [`Athlete`](blob/master/Sources/Models/Athlete.swift) object
 
 #### `GET /athlete/activities`
 
-* Returns the authenticated athlete's activity summaries, retrieving an `ActivitySummary` list
+* Returns the authenticated athlete's activity summaries, retrieving an [`ActivitySummary`](blob/master/Sources/Models/ActivitySummary.swift) list
 
 #### `GET /athletes/:id/stats`
 
-*  Returns the target athlete's stats, retrieving an `AthleteStats` object
+*  Returns the target athlete's stats, retrieving an [`AthleteStats`](blob/master/Sources/Models/AthleteStats.swift) object
 
 ### TODO
 
