@@ -52,13 +52,17 @@ self.client.requestCurrentAthleteActivities { result in
 
 This is still a WIP,  but I will add new requests **soon**.
 
-#### `GET https://www.strava.com/api/v3/athlete`
+#### `GET /athlete`
 
-* `/athlete` - Returns the authenticated athlete, retrieving an `Athlete` object
+* Returns the authenticated athlete, retrieving an `Athlete` object
 
-#### `GET https://www.strava.com/api/v3/athlete/activities`
+#### `GET /athlete/activities`
 
-* `/athlete/activitie` - Returns the authenticated athlete's activity summaries, retrieving an `ActivitySummary` list
+* Returns the authenticated athlete's activity summaries, retrieving an `ActivitySummary` list
+
+#### `GET /athletes/:id/stats`
+
+*  Returns the target athlete's stats, retrieving an `AthleteStats` object
 
 ### TODO
 

@@ -144,6 +144,7 @@
 		1AF7521835B60103FA608EF4 /* Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-watchOS/Pods-StravaAPIClient-StravaAPIClient-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1D954D7C3686D2627FF83BB2 /* Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StravaAPIClient-StravaAPIClient-iOS/Pods-StravaAPIClient-StravaAPIClient-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1F2043F7203E2043005532FC /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		1F2043F8203E2A42005532FC /* .codeclimate.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codeclimate.yml; sourceTree = "<group>"; };
 		1F407E52203332C3002C9192 /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
 		1F407E5320333302002C9192 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		1F52BD252038A4D500F00ADC /* SummaryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryActivity.swift; sourceTree = "<group>"; };
@@ -300,6 +301,7 @@
 				1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */,
 				1FF53F5B1FF531B200E12D4F /* swiftlint.sh */,
 				1FF53F601FF531D800E12D4F /* .swiftlint.yml */,
+				1F2043F8203E2A42005532FC /* .codeclimate.yml */,
 				1FF53F5C1FF531BB00E12D4F /* Gemfile */,
 				1FF53F5D1FF531C400E12D4F /* LICENSE */,
 				1FF53F5E1FF531C400E12D4F /* README.md */,
