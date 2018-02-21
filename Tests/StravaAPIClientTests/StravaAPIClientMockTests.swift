@@ -122,4 +122,47 @@ class StravaAPIClientMockTests: XCTestCase {
         self.wait(for: [errorExpectation], timeout: 2.0)
         self.removeStub(errorStub)
     }
+
+    func testCurrentAthleteStatsOk() {
+
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/athletes/\(1234)/stats", jsonFilename: "athlete_stats_200")
+
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteStats")
+        self.client.requestCurrentAthleteStats(athleteId: 1234) { result in
+
+            if case let .success(stats) = result {
+
+                XCTAssertNotNil(stats)
+                XCTAssertEqual(stats.allRunTotals.count, 327)
+                XCTAssertEqual(stats.allRideTotals.distance, 447541.0)
+                XCTAssertEqual(stats.biggestClimbElevationGain, 350.6, accuracy: 0.01)
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 2.0)
+        self.removeStub(stub)
+    }
+
+    func testCurrentAthleteStatsError() {
+
+        let errorStub = self.mockServerError(path: "\(Constants.apiPrefix)/athletes/1234/stats")
+        let errorExpectation = XCTestExpectation(description: "errorRequestCurrentAthleteStats")
+        self.client.requestCurrentAthleteStats(athleteId: 1234) { result in
+
+            if case .failure = result {
+
+                errorExpectation.fulfill()
+
+            } else{
+
+                XCTFail()
+            }
+        }
+        self.wait(for: [errorExpectation], timeout: 2.0)
+        self.removeStub(errorStub)
+    }
 }

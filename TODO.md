@@ -18,7 +18,7 @@ Some missing tasks:
   - [Athletes](https://developers.strava.com/docs/reference/#api-Athletes)
     - [x] [Get Authenticated Athlete](https://developers.strava.com/docs/reference/#api-Athletes-getLoggedInAthlete)
     - [ ] [Get Zones](https://developers.strava.com/docs/reference/#api-Athletes-getLoggedInAthleteZones)
-    - [ ] [Get Athlete Stats](https://developers.strava.com/docs/reference/#api-Athletes-getStats)
+    - [x] [Get Athlete Stats](https://developers.strava.com/docs/reference/#api-Athletes-getStats)
     - [ ] [Update Athlete](https://developers.strava.com/docs/reference/#api-Athletes-updateLoggedInAthlete)
   - [Clubs](https://developers.strava.com/docs/reference/#api-Clubs)
     - [ ] [List Club Activities](https://developers.strava.com/docs/reference/#api-Clubs-getClubActivitiesById)
@@ -53,3 +53,4 @@ Some missing tasks:
     - [ ] [Upload Activity](https://developers.strava.com/docs/reference/#api-Uploads-createUpload)
     - [ ] [Get Upload](https://developers.strava.com/docs/reference/#api-Uploads-getUploadById)
 - [ ] Add mock tests for those endpoints
+

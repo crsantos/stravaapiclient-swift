@@ -33,7 +33,7 @@ class StravaAPIClientIntegrationTests: XCTestCase {
         self.client = StravaAPIClient(with: config)
     }
 
-    func testBootAPIClient() {
+    func testRequestCurrentAthleteIntegration() {
 
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
@@ -48,7 +48,11 @@ class StravaAPIClientIntegrationTests: XCTestCase {
             }
             expectation.fulfill()
         }
-        let expectation2 = XCTestExpectation(description: "requestCurrentAthleteActivities")
+    }
+
+    func testRequestCurrentAthleteActivitiesIntegration() {
+
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteActivities")
         self.client.requestCurrentAthleteActivities { result in
 
             if case let .success(activities) = result {
@@ -59,8 +63,26 @@ class StravaAPIClientIntegrationTests: XCTestCase {
 
                 debugPrint("Error: \(error)")
             }
-            expectation2.fulfill()
+            expectation.fulfill()
         }
-        self.wait(for: [expectation, expectation2], timeout: 2.0)
+        self.wait(for: [expectation], timeout: 2.0)
+    }
+
+    func testRequestCurrentAthleteStatsIntegration() {
+
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteStats")
+        self.client.requestCurrentAthleteStats(athleteId: 4246969) { result in
+
+            if case let .success(stats) = result {
+
+                debugPrint("Got Stats: \(stats)")
+
+            } else if case let .failure(error) = result {
+
+                debugPrint("Error: \(error)")
+            }
+            expectation.fulfill()
+        }
+        self.wait(for: [expectation], timeout: 2.0)
     }
 }

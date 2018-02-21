@@ -41,6 +41,7 @@ public struct Athlete: Codable {
     let shoes: [Bike]
 
     enum CodingKeys: String, CodingKey {
+
         case id = "id"
         case resourceState = "resource_state"
         case firstname = "firstname"
@@ -72,9 +73,11 @@ public struct Athlete: Codable {
 }
 
 struct AthleteId: Codable {
+
     let id, resourceState: Int
 
     enum CodingKeys: String, CodingKey {
+
         case id
         case resourceState = "resource_state"
     }
