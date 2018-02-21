@@ -65,14 +65,7 @@ fileprivate extension Networking {
 
         if let error = error as NSError? {
 
-            if let response = response {
-
-                completion(.failure(.underlyingErrorResponse(error, response)))
-
-            } else {
-
-                completion(.failure(.underlyingError(error)))
-            }
+            self.handleFailure(with: response, error: error, completion: completion)
 
         } else if let data = data {
 
@@ -82,19 +75,36 @@ fileprivate extension Networking {
                 return
             }
 
-            do {
-
-                let object = try JSONDecoder().decode(T.self, from: data)
-                completion(.success(object))
-
-            } catch let error {
-
-                completion(.failure(.parsingError(.decode(error))))
-            }
+            self.parse(data, completion: completion)
 
         } else {
 
             completion(.failure(.generic))
+        }
+    }
+
+    func handleFailure<T: Codable>(with response: URLResponse?, error: NSError, completion: APICompletion<T>) {
+
+        if let response = response {
+
+            completion(.failure(.underlyingErrorResponse(error, response)))
+
+        } else {
+
+            completion(.failure(.underlyingError(error)))
+        }
+    }
+
+    func parse<T: Codable>(_ data: Data, completion: APICompletion<T>) {
+
+        do {
+
+            let object = try JSONDecoder().decode(T.self, from: data)
+            completion(.success(object))
+
+        } catch let error {
+
+            completion(.failure(.parsingError(.decode(error))))
         }
     }
 }
