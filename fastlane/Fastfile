@@ -16,6 +16,7 @@ platform :ios do
 
     lint_pod
     compile_and_test(scheme: options[:scheme])
+    danger_run
     generate_test_coverage
   end
 
@@ -38,5 +39,15 @@ end
     slather(html: true, cobertura_xml: true, use_bundle_exec: true)
     codecov(path: "fastlane/reports/coverage/slather/cobertura.xml")
     #sh "curl -s https://codecov.io/bash -f fastlane/reports/coverage/slather/cobertura.xml -X coveragepy -X gcov -X xcode"
+  end
+
+  desc "Run Danger"
+  private_lane :danger_run do
+    danger(
+      danger_id: "unit-tests",
+      dangerfile: "DangerFile",
+      github_api_token: ENV["GITHUB_API_TOKEN"],
+      verbose: true
+    )
   end
 end
