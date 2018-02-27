@@ -21,8 +21,15 @@ extension XCTestCase {
     }
 
     @discardableResult
-    func mockServerError(path: String, verb: HTTPMethod = .get) -> Stub {
+    func mockServerEmptyData(path: String, verb: HTTPMethod = .get) -> Stub {
 
         return stub(http(verb, uri: path), http(500))
     }
+
+    @discardableResult
+    func mockServerError(path: String, verb: HTTPMethod = .get) -> Stub {
+
+        return stub(http(verb, uri: path), failure(NSError(domain: "D", code: 123456, userInfo: nil)))
+    }
+
 }
