@@ -62,13 +62,39 @@ class StravaAPIClientMockTests: XCTestCase {
         self.removeStub(stub)
     }
 
-    func testMockCurrentLoggedInAthleteError() {
+    /// Extensive error test to cover the .underlyingError case
+    func testMockCurrentLoggedInAthleteErrorUnderlyingNSError() {
 
-        let errorStub = self.mockServerError(path: "\(Constants.apiPrefix)/athlete/athlete")
+        let errorStub = self.mockServerError(path: "\(Constants.apiPrefix)/athlete")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
 
-            if case .failure = result {
+            if case let .failure(err) = result,
+                case let .underlyingError(someNSError as NSError) = err,
+                someNSError.domain == "D",
+                someNSError.code == 123456 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail()
+            }
+        }
+
+        self.wait(for: [expectation], timeout: 2.0)
+        self.removeStub(errorStub)
+    }
+
+    /// Extensive error test to cover the .emptyData case
+    func testMockCurrentLoggedInAthleteErrorEmptyData() {
+
+        let errorStub = self.mockServerEmptyData(path: "\(Constants.apiPrefix)/athlete")
+        let expectation = XCTestExpectation(description: "requestCurrentAthlete")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(err) = result,
+                case .emptyData = err {
 
                 expectation.fulfill()
 
