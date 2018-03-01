@@ -65,17 +65,28 @@ struct SummaryActivity: Codable {
     let athlete: AthleteId
     let name: String
     let distance: Double
-    let movingTime, elapsedTime, totalElevationGain: Int
-    let type, startDate, startDateLocal, timezone: String
+    let movingTime: Int
+    let elapsedTime: Int
+    let totalElevationGain: Int
+    let type: String
+    let startDate: String
+    let startDateLocal: String
+    let timezone: String
     let utcOffset: Int
     let startLatlng, endLatlng: [Double]?
     let locationCity, locationState: JSONNull?
     let locationCountry: String
     let startLatitude, startLongitude: Double?
-    let achievementCount, kudosCount, commentCount, athleteCount: Int
+    let achievementCount: Int
+    let kudosCount: Int
+    let commentCount: Int
+    let athleteCount: Int
     let photoCount: Int
     let map: Map?
-    let trainer, commute, manual, activityPrivate: Bool
+    let trainer: Bool
+    let commute: Bool
+    let manual: Bool
+    let activityPrivate: Bool
     let flagged: Bool
     let gearID: String?
     let fromAcceptedTag: Bool
@@ -134,7 +145,10 @@ struct SummaryActivity: Codable {
         case commentCount = "comment_count"
         case athleteCount = "athlete_count"
         case photoCount = "photo_count"
-        case map, trainer, commute, manual
+        case map
+        case trainer
+        case commute
+        case manual
         case activityPrivate = "private"
         case flagged
         case gearID = "gear_id"

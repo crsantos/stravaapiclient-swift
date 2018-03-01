@@ -13,13 +13,22 @@ struct Segment: Codable {
     let id, resourceState: Int
     let name: String
     let activityType: ActivityType
-    let distance, averageGrade, maximumGrade, elevationHigh: Double
+    let distance: Double
+    let averageGrade: Double
+    let maximumGrade: Double
+    let elevationHigh: Double
     let elevationLow: Double
-    let startLatlng, endLatlng: [Double]
-    let startLatitude, startLongitude, endLatitude, endLongitude: Double
+    let startLatlng: [Double]
+    let endLatlng: [Double]
+    let startLatitude: Double
+    let startLongitude: Double
+    let endLatitude: Double
+    let endLongitude: Double
     let climbCategory: Int
     let city, state, country: String
-    let segmentPrivate, hazardous, starred: Bool
+    let segmentPrivate: Bool
+    let hazardous: Bool
+    let starred: Bool
 
     enum CodingKeys: String, CodingKey {
 
@@ -39,7 +48,9 @@ struct Segment: Codable {
         case endLatitude = "end_latitude"
         case endLongitude = "end_longitude"
         case climbCategory = "climb_category"
-        case city, state, country
+        case city
+        case state
+        case country
         case segmentPrivate = "private"
         case hazardous, starred
     }
