@@ -2,7 +2,7 @@
 //  XCTestCase+Load.swift
 //  StravaAPIClient
 //
-//  Created by Ricardo Santos on 17/02/2018.
+//  Created by Carlos Santos on 17/02/2018.
 //  Copyright © 2018 crsantos.info. All rights reserved.
 //
 
@@ -31,5 +31,4 @@ extension XCTestCase {
 
         return stub(http(verb, uri: path), failure(NSError(domain: "D", code: 123456, userInfo: nil)))
     }
-
 }

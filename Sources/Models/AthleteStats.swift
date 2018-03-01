@@ -2,7 +2,7 @@
 //  AthleteStats.swift
 //  StravaAPIClient
 //
-//  Created by Ricardo Santos on 21/02/2018.
+//  Created by Carlos Santos on 21/02/2018.
 //  Copyright © 2018 crsantos.info. All rights reserved.
 //
 
