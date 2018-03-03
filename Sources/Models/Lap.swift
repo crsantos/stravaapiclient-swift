@@ -2,31 +2,40 @@
 //  Lap.swift
 //  StravaAPIClient
 //
-//  Created by Ricardo Santos on 17/02/2018.
+//  Created by Carlos Santos on 17/02/2018.
 //  Copyright © 2018 crsantos.info. All rights reserved.
 //
 
 import Foundation
 
 struct Lap: Codable {
-    let id, resourceState: Int
+
+    let id: Int
+    let resourceState: Int
     let name: String
-    let activity, athlete: Athlete
-    let elapsedTime, movingTime: Int
-    let startDate, startDateLocal: String
+    let activity: Athlete
+    let athlete: Athlete
+    let elapsedTime: Int
+    let movingTime: Int
+    let startDate: String
+    let startDateLocal: String
     let distance: Double
-    let startIndex, endIndex: Int
+    let startIndex: Int
+    let endIndex: Int
     let totalElevationGain: Int?
-    let averageSpeed, maxSpeed: Double?
+    let averageSpeed: Double?
+    let maxSpeed: Double?
     let averageCadence: Double
     let deviceWatts: Bool
     let averageWatts: Double
     let lapIndex, split: Int?
     let segment: Segment?
-    let komRank, prRank: JSONNull?
+    let komRank: JSONNull?
+    let prRank: JSONNull?
     let hidden: Bool?
 
     enum CodingKeys: String, CodingKey {
+
         case id
         case resourceState = "resource_state"
         case name, activity, athlete
