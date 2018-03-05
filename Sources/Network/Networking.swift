@@ -21,21 +21,6 @@ public enum Result<T, E> {
 
 public typealias APICompletion<T: Codable> = (Result<T, NetworkingError>) -> ()
 
-public enum NetworkingError: Error {
-
-    case generic
-    case emptyData
-    case underlyingErrorResponse(Error, URLResponse)
-    case underlyingError(Error)
-    case parsingError(ParseError)
-}
-
-public enum ParseError: Error {
-
-    case emptyResponse
-    case decode(Error)
-}
-
 struct Networking {
 
     fileprivate let requester: HTTPRequester = HTTPRequester()
@@ -63,13 +48,23 @@ fileprivate extension Networking {
 
     func handleDataTaskResponse<T: Codable>(data: Data?, response: URLResponse?, error: Error?, completion: APICompletion<T>) {
 
+        if let response = response as? HTTPURLResponse,
+            response.hasAcceptableStatusCode == false,
+            let data = data,
+            data.isEmpty == false {
+
+            self.handleErrorData(data, response: response, completion: completion)
+            return
+        }
+
         if let error = error as NSError? {
 
-            self.handleFailure(with: response, error: error, completion: completion)
+            completion(.failure(.underlyingError(error)))
 
         } else if let data = data {
 
-            guard data.isEmpty == false else {
+            // if case let .data(existingData) = data.unwrapped
+            guard data.isEmpty == false else { // TODO: create a result based unwrap of data?! .existingData(Data) / .emptyData -> ?
 
                 completion(.failure(.emptyData))
                 return
@@ -83,16 +78,16 @@ fileprivate extension Networking {
         }
     }
 
-    func handleFailure<T: Codable>(with response: URLResponse?, error: NSError, completion: APICompletion<T>) {
+    func handleErrorData<T: Codable>(_ data: Data, response: HTTPURLResponse, completion: APICompletion<T>) {
 
-        if let response = response {
+        self.parseError(data, completion: { result in
 
-            completion(.failure(.underlyingErrorResponse(error, response)))
+            if case let .success(apiErrorModel) = result {
 
-        } else {
-
-            completion(.failure(.underlyingError(error)))
-        }
+                let httpAPIError = APIHTTPError.fromResponse(response)
+                completion(.failure(.apiError(httpAPIError, apiErrorModel)))
+            }
+        })
     }
 
     func parse<T: Codable>(_ data: Data, completion: APICompletion<T>) {
@@ -106,5 +101,10 @@ fileprivate extension Networking {
 
             completion(.failure(.parsingError(.decode(error))))
         }
+    }
+
+    func parseError(_ data: Data, completion: APICompletion<APIErrorModel>) {
+
+        self.parse(data, completion: completion)
     }
 }

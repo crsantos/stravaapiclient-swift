@@ -1,0 +1,10 @@
+{
+    "message": "Record Not Found",
+    "errors": [
+        {
+            "resource": "resource",
+            "field": "path",
+            "code": "invalid"
+        }
+    ]
+}

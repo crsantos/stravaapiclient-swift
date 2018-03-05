@@ -41,12 +41,12 @@ class StravaAPIClientIntegrationTests: XCTestCase {
             if case let .success(athlete) = result {
 
                 debugPrint("Got Athlete: \(athlete)")
+                expectation.fulfill()
 
             } else if case let .failure(error) = result {
 
-                debugPrint("Error: \(error)")
+                XCTFail("Error: \(error)")
             }
-            expectation.fulfill()
         }
     }
 
@@ -58,12 +58,12 @@ class StravaAPIClientIntegrationTests: XCTestCase {
             if case let .success(activities) = result {
 
                 debugPrint("Got Activities: \(activities)")
+                expectation.fulfill()
 
             } else if case let .failure(error) = result {
 
-                debugPrint("Error: \(error)")
+                XCTFail("Error: \(error)")
             }
-            expectation.fulfill()
         }
         self.wait(for: [expectation], timeout: 2.0)
     }
@@ -76,12 +76,12 @@ class StravaAPIClientIntegrationTests: XCTestCase {
             if case let .success(stats) = result {
 
                 debugPrint("Got Stats: \(stats)")
+                expectation.fulfill()
 
             } else if case let .failure(error) = result {
 
-                debugPrint("Error: \(error)")
+                XCTFail("Error: \(error)")
             }
-            expectation.fulfill()
         }
         self.wait(for: [expectation], timeout: 2.0)
     }
