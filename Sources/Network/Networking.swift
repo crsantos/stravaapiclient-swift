@@ -50,8 +50,7 @@ fileprivate extension Networking {
 
         if let response = response as? HTTPURLResponse,
             response.hasAcceptableStatusCode == false,
-            let data = data,
-            data.isEmpty == false {
+            case let .data(data) = data.unwrapped {
 
             self.handleErrorData(data, response: response, completion: completion)
             return

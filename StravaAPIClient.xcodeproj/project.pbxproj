@@ -79,6 +79,10 @@
 		1F5F5730204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
 		1F5F5731204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
 		1F5F5732204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
+		1F5F5734204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F5F5735204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F5F5736204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F5F5737204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
 		1FB22C08204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
@@ -192,6 +196,7 @@
 		1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
 		1F5F572B204DF92100EA471F /* error_unauthorized_401.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_unauthorized_401.json; sourceTree = "<group>"; };
 		1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid.json; sourceTree = "<group>"; };
+		1F5F5733204E8AE100EA471F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		1FB22C07204AA29C00727745 /* APIErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
 		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
 		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
@@ -377,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */,
+				1F5F5733204E8AE100EA471F /* Data.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1184,6 +1190,7 @@
 				1FF53F901FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD302038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F861FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5734204E8AE100EA471F /* Data.swift in Sources */,
 				1F5F5722204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6B1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C08204AA29C00727745 /* APIErrorModel.swift in Sources */,
@@ -1223,6 +1230,7 @@
 				1FF53F921FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD322038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F881FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5736204E8AE100EA471F /* Data.swift in Sources */,
 				1F5F5724204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6D1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */,
@@ -1252,6 +1260,7 @@
 				1FF53F931FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD332038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F891FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5737204E8AE100EA471F /* Data.swift in Sources */,
 				1F5F5725204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6E1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C0B204AA29C00727745 /* APIErrorModel.swift in Sources */,
@@ -1281,6 +1290,7 @@
 				1FF53F911FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD312038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F871FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5735204E8AE100EA471F /* Data.swift in Sources */,
 				1F5F5723204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6C1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */,
