@@ -14,6 +14,8 @@ fileprivate enum HeaderConstants {
     static let rateLimitUsageKey = "X-RateLimit-Usage"
 }
 
+fileprivate typealias RateLimitGroup = (limit: RateLimit, usage: RateLimit)
+
 public enum NetworkingError: Error {
 
     case generic
@@ -59,32 +61,12 @@ public enum APIHTTPError: Error {
 
         case 403:
 
-            if let rateLimitLimit = response.allHeaderFields[HeaderConstants.rateLimitLimitKey] as? String,
-                let rateLimitUsage = response.allHeaderFields[HeaderConstants.rateLimitUsageKey] as? String {
+            if let rateLimitGroup = APIHTTPError.rateLimits(from: response) {
 
-                let usageTuple = rateLimitUsage.split(separator: ",")
-                let limitTuple = rateLimitLimit.split(separator: ",")
-
-                if limitTuple.count == 2,
-                    usageTuple.count == limitTuple.count,
-                    let shortUsage = usageTuple.first,
-                    let longUsage = usageTuple.last,
-                    let shortLimit = limitTuple.first,
-                    let longLimit = limitTuple.last,
-                    let shortTermUsage = Int(String(describing: shortUsage)),
-                    let longTermUsage = Int(String(describing: longUsage)),
-                    let shortTermLimit = Int(String(describing: shortLimit)),
-                    let longTermLimit = Int(String(describing: longLimit)) {
-
-                    httpAPIError = .rateLimitingExceeded(
-                        RateLimit(shortTerm: shortTermLimit, longTerm: longTermLimit),
-                        RateLimit(shortTerm: shortTermUsage, longTerm: longTermUsage)
-                    )
-
-                } else {
-
-                    httpAPIError = .unknown // fallsback to unknown if it can't find the headers
-                }
+                httpAPIError = .rateLimitingExceeded(
+                    rateLimitGroup.limit,
+                    rateLimitGroup.usage
+                )
 
             } else {
 
@@ -97,5 +79,39 @@ public enum APIHTTPError: Error {
         }
 
         return httpAPIError
+    }
+}
+
+// MARK: - Private
+
+fileprivate extension APIHTTPError {
+
+    static func rateLimits(from response: HTTPURLResponse) -> RateLimitGroup? {
+
+        if let rateLimitLimit = response.allHeaderFields[HeaderConstants.rateLimitLimitKey] as? String,
+            let rateLimitUsage = response.allHeaderFields[HeaderConstants.rateLimitUsageKey] as? String {
+
+            let usageTuple = rateLimitUsage.split(separator: ",")
+            let limitTuple = rateLimitLimit.split(separator: ",")
+
+            if limitTuple.count == 2,
+                usageTuple.count == limitTuple.count,
+                let shortUsage = usageTuple.first,
+                let longUsage = usageTuple.last,
+                let shortLimit = limitTuple.first,
+                let longLimit = limitTuple.last,
+                let shortTermUsage = Int(String(describing: shortUsage)),
+                let longTermUsage = Int(String(describing: longUsage)),
+                let shortTermLimit = Int(String(describing: shortLimit)),
+                let longTermLimit = Int(String(describing: longLimit)) {
+
+                return (
+                    RateLimit(shortTerm: shortTermLimit, longTerm: longTermLimit),
+                    RateLimit(shortTerm: shortTermUsage, longTerm: longTermUsage)
+                )
+            }
+        }
+
+        return nil
     }
 }

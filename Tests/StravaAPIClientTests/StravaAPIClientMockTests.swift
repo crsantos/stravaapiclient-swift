@@ -130,7 +130,7 @@ class StravaAPIClientMockTests: XCTestCase {
 
             if case let .failure(error) = result,
                 case let .apiError(apiError, errorModel) = error,
-                case .unknown = apiError,
+                case .forbidden = apiError,
                 errorModel.errors.count == 1 {
 
                 expectation.fulfill()
