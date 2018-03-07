@@ -82,14 +82,14 @@ fileprivate extension Networking {
 
     func handleErrorData<T: Codable>(_ data: Data, response: HTTPURLResponse, completion: APICompletion<T>) {
 
-        self.parseError(data, completion: { result in
+        self.parseError(data) { result in
 
             if case let .success(apiErrorModel) = result {
 
                 let httpAPIError = APIHTTPError.fromResponse(response)
                 completion(.failure(.apiError(httpAPIError, apiErrorModel)))
             }
-        })
+        }
     }
 
     func parse<T: Codable>(_ data: Data, completion: APICompletion<T>) {
