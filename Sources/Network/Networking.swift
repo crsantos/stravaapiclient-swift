@@ -48,32 +48,35 @@ fileprivate extension Networking {
 
     func handleDataTaskResponse<T: Codable>(data: Data?, response: URLResponse?, error: Error?, completion: APICompletion<T>) {
 
-        if let response = response as? HTTPURLResponse,
-            response.hasAcceptableStatusCode == false,
-            case let .data(data) = data.unwrapped {
-
-            self.handleErrorData(data, response: response, completion: completion)
-            return
-        }
-
+        // 1. Check if there is an error, if so, fail immediately
         if let error = error as NSError? {
 
             completion(.failure(.underlyingError(error)))
+            return
+        }
 
-        } else if let data = data {
+        // 2. check if response is HTTPURLResponse, otherwise we cannot use it, fail right there
+        guard let response = response as? HTTPURLResponse else {
 
-            // if case let .data(existingData) = data.unwrapped
-            guard data.isEmpty == false else { // TODO: create a result based unwrap of data?! .existingData(Data) / .emptyData -> ?
+            completion(.failure(.generic))
+            return
+        }
 
-                completion(.failure(.emptyData))
-                return
-            }
+        // 2.1 - check if data exists
+        guard case let .data(data) = data.unwrapped else {
 
-            self.parse(data, completion: completion)
+            completion(.failure(.emptyData))
+            return
+        }
+
+        // 2.2 check status code
+        if response.hasAcceptableStatusCode == false {
+
+            self.handleErrorData(data, response: response, completion: completion)
 
         } else {
 
-            completion(.failure(.generic))
+            self.parse(data, completion: completion)
         }
     }
 
