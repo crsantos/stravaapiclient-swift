@@ -99,9 +99,25 @@ fileprivate extension Networking {
             let object = try JSONDecoder().decode(T.self, from: data)
             completion(.success(object))
 
+        } catch DecodingError.dataCorrupted(let context) {
+
+            completion(.failure(.parsingError(.decode(DecodingError.dataCorrupted(context)))))
+
+        } catch DecodingError.keyNotFound(let key, let context) {
+
+            completion(.failure(.parsingError(.decode(DecodingError.keyNotFound(key, context)))))
+
+        } catch DecodingError.typeMismatch(let type, let context) {
+
+            completion(.failure(.parsingError(.decode(DecodingError.typeMismatch(type, context)))))
+
+        } catch DecodingError.valueNotFound(let value, let context) {
+
+            completion(.failure(.parsingError(.decode(DecodingError.valueNotFound(value, context)))))
+
         } catch let error {
 
-            completion(.failure(.parsingError(.decode(error))))
+            completion(.failure(.parsingError(.invalid(error))))
         }
     }
 
