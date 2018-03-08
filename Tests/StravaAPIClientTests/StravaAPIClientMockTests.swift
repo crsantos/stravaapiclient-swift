@@ -41,6 +41,176 @@ class StravaAPIClientMockTests: XCTestCase {
         super.tearDown()
         self.removeAllStubs()
     }
+
+    // MARK: Errors
+
+    func testInvalidJSONResponse() {
+
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid")
+        let expectation = XCTestExpectation(description: "requestCurrentAthlete")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .parsingError(parseError) = error,
+                case let .decode(decodingError) = parseError,
+                let decodedError = (decodingError as? DecodingError),
+                case let DecodingError.keyNotFound(codingKey, _) = decodedError {
+
+                XCTAssertEqual(codingKey.stringValue, "resource_state")
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testError404NotFound() {
+
+        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_notfound_404", status: 404)
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteError404")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .apiError(apiError, errorModel) = error,
+                case .notFound = apiError,
+                errorModel.errors.count == 1 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail("Result: \(result)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testError403RateLimit() {
+
+        let headers = [
+            "X-RateLimit-Limit": "600,30000",
+            "X-RateLimit-Usage": "642,27300"
+        ]
+        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403", status: 403, headers: headers)
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteError403RateLimit")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .apiError(apiError, errorModel) = error,
+                case let .rateLimitingExceeded(limit, usage) = apiError,
+                usage.shortTerm == 642,
+                limit.longTerm == 30000,
+                errorModel.errors.count == 1 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail("Result: \(result)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testError403InvalidRateLimit() {
+
+        let headers = [
+            "X-RateLimit-Limit": "30000",
+            "X-RateLimit-Usage": "642"
+        ]
+        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403", status: 403, headers: headers)
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteError403InvalidRateLimit")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .apiError(apiError, errorModel) = error,
+                case .forbidden = apiError,
+                errorModel.errors.count == 1 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail("Result: \(result)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testError403Forbidden() {
+
+        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403", status: 403)
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteError403Forbidden")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .apiError(apiError, errorModel) = error,
+                case .forbidden = apiError,
+                errorModel.errors.count == 1 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail("Result: \(result)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testError401Unauthorized() {
+
+        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_unauthorized_401", status: 401)
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteError401")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .apiError(apiError, errorModel) = error,
+                case .unauthorized = apiError,
+                errorModel.errors.count == 0 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail("Result: \(result)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testError500() {
+
+        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_unauthorized_401", status: 500)
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteError500")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .apiError(apiError, errorModel) = error,
+                case .unknown = apiError,
+                errorModel.errors.count == 0 {
+
+                expectation.fulfill()
+
+            } else {
+
+                XCTFail("Result: \(result)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    // MARK: Resources
     
     func testMockCurrentLoggedInAthleteOk() {
         
@@ -58,7 +228,7 @@ class StravaAPIClientMockTests: XCTestCase {
                 XCTFail("Error: \(error)")
             }
         }
-        self.wait(for: [expectation], timeout: 2.0)
+        self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(stub)
     }
     
@@ -82,7 +252,7 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         
-        self.wait(for: [expectation], timeout: 2.0)
+        self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(errorStub)
     }
     
@@ -104,7 +274,7 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         
-        self.wait(for: [expectation], timeout: 2.0)
+        self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(errorStub)
     }
     
@@ -126,27 +296,8 @@ class StravaAPIClientMockTests: XCTestCase {
                 XCTFail("Error: \(error)")
             }
         }
-        self.wait(for: [expectation], timeout: 2.0)
+        self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(stub)
-    }
-    
-    func testCurrentAthleteActivitiesError() {
-        
-        let errorStub = self.mockServerError(path: "\(Constants.apiPrefix)/athlete/activities")
-        let errorExpectation = XCTestExpectation(description: "errorRequestCurrentAthleteActivities")
-        self.client.requestCurrentAthleteActivities { result in
-            
-            if case .failure = result {
-                
-                errorExpectation.fulfill()
-                
-            } else{
-                
-                XCTFail()
-            }
-        }
-        self.wait(for: [errorExpectation], timeout: 2.0)
-        self.removeStub(errorStub)
     }
     
     func testCurrentAthleteStatsOk() {
@@ -169,26 +320,7 @@ class StravaAPIClientMockTests: XCTestCase {
                 XCTFail("Error: \(error)")
             }
         }
-        self.wait(for: [expectation], timeout: 2.0)
+        self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(stub)
-    }
-    
-    func testCurrentAthleteStatsError() {
-        
-        let errorStub = self.mockServerError(path: "\(Constants.apiPrefix)/athletes/1234/stats")
-        let errorExpectation = XCTestExpectation(description: "errorRequestCurrentAthleteStats")
-        self.client.requestCurrentAthleteStats(athleteId: 1234) { result in
-            
-            if case .failure = result {
-                
-                errorExpectation.fulfill()
-                
-            } else{
-                
-                XCTFail()
-            }
-        }
-        self.wait(for: [errorExpectation], timeout: 2.0)
-        self.removeStub(errorStub)
     }
 }

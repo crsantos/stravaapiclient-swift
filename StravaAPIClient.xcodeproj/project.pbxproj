@@ -59,6 +59,34 @@
 		1F5CBB3E203D643700625DBF /* AthleteStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CBB3C203D643700625DBF /* AthleteStats.swift */; };
 		1F5CBB3F203D643700625DBF /* AthleteStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CBB3C203D643700625DBF /* AthleteStats.swift */; };
 		1F5CBB40203D643700625DBF /* AthleteStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CBB3C203D643700625DBF /* AthleteStats.swift */; };
+		1F5F5719204DD15700EA471F /* error_notfound_404.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F5718204DD15700EA471F /* error_notfound_404.json */; };
+		1F5F571A204DD15700EA471F /* error_notfound_404.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F5718204DD15700EA471F /* error_notfound_404.json */; };
+		1F5F571B204DD15700EA471F /* error_notfound_404.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F5718204DD15700EA471F /* error_notfound_404.json */; };
+		1F5F571D204DEC4000EA471F /* error_rate_limit_403.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */; };
+		1F5F571E204DEC4000EA471F /* error_rate_limit_403.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */; };
+		1F5F571F204DEC4000EA471F /* error_rate_limit_403.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */; };
+		1F5F5722204DF00800EA471F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5721204DF00800EA471F /* Errors.swift */; };
+		1F5F5723204DF00800EA471F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5721204DF00800EA471F /* Errors.swift */; };
+		1F5F5724204DF00800EA471F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5721204DF00800EA471F /* Errors.swift */; };
+		1F5F5725204DF00800EA471F /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5721204DF00800EA471F /* Errors.swift */; };
+		1F5F5727204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */; };
+		1F5F5728204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */; };
+		1F5F5729204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */; };
+		1F5F572A204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */; };
+		1F5F572C204DF92100EA471F /* error_unauthorized_401.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572B204DF92100EA471F /* error_unauthorized_401.json */; };
+		1F5F572D204DF92100EA471F /* error_unauthorized_401.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572B204DF92100EA471F /* error_unauthorized_401.json */; };
+		1F5F572E204DF92100EA471F /* error_unauthorized_401.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572B204DF92100EA471F /* error_unauthorized_401.json */; };
+		1F5F5730204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
+		1F5F5731204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
+		1F5F5732204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
+		1F5F5734204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F5F5735204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F5F5736204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F5F5737204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1FB22C08204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
+		1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
+		1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
+		1FB22C0B204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FF53F671FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
 		1FF53F681FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
 		1FF53F691FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
@@ -162,6 +190,14 @@
 		1F52BD5E2038E23700F00ADC /* athlete_stats_200.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = athlete_stats_200.json; sourceTree = "<group>"; };
 		1F5CBB3C203D643700625DBF /* AthleteStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthleteStats.swift; sourceTree = "<group>"; };
 		1F5EA43F1FF51BA200ED872E /* StravaAPIClient.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = StravaAPIClient.podspec; sourceTree = "<group>"; };
+		1F5F5718204DD15700EA471F /* error_notfound_404.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_notfound_404.json; sourceTree = "<group>"; };
+		1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_rate_limit_403.json; sourceTree = "<group>"; };
+		1F5F5721204DF00800EA471F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
+		1F5F572B204DF92100EA471F /* error_unauthorized_401.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_unauthorized_401.json; sourceTree = "<group>"; };
+		1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid.json; sourceTree = "<group>"; };
+		1F5F5733204E8AE100EA471F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		1FB22C07204AA29C00727745 /* APIErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
 		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
 		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		1FF53F5D1FF531C400E12D4F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -288,7 +324,11 @@
 			children = (
 				1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */,
 				1F52BD5E2038E23700F00ADC /* athlete_stats_200.json */,
+				1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */,
 				1F52BD562038BC9400F00ADC /* current_athlete_200.json */,
+				1F5F5718204DD15700EA471F /* error_notfound_404.json */,
+				1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */,
+				1F5F572B204DF92100EA471F /* error_unauthorized_401.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -310,6 +350,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		1F5F5720204DEFF300EA471F /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				1F5F5721204DF00800EA471F /* Errors.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
 		1FF53F611FF5329D00E12D4F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +373,7 @@
 				1F52BD432038A65D00F00ADC /* Photo.swift */,
 				1F52BD482038A77200F00ADC /* SplitsMetric.swift */,
 				1F5CBB3C203D643700625DBF /* AthleteStats.swift */,
+				1FB22C07204AA29C00727745 /* APIErrorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -332,6 +381,8 @@
 		1FF53F651FF5329D00E12D4F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */,
+				1F5F5733204E8AE100EA471F /* Data.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -339,6 +390,7 @@
 		1FF53F661FF5329D00E12D4F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1F5F5720204DEFF300EA471F /* Errors */,
 				1FF53F841FF54A0100E12D4F /* Resources */,
 				1FF53F731FF5400600E12D4F /* Enums */,
 				1FF53F791FF5477200E12D4F /* HTTPRequester.swift */,
@@ -751,9 +803,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5F571D204DEC4000EA471F /* error_rate_limit_403.json in Resources */,
+				1F5F5719204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD572038BC9400F00ADC /* current_athlete_200.json in Resources */,
 				1F52BD5F2038E23700F00ADC /* athlete_stats_200.json in Resources */,
+				1F5F572C204DF92100EA471F /* error_unauthorized_401.json in Resources */,
 				1F52BD4F2038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
+				1F5F5730204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,9 +838,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5F571E204DEC4000EA471F /* error_rate_limit_403.json in Resources */,
+				1F5F571A204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD582038BC9400F00ADC /* current_athlete_200.json in Resources */,
 				1F52BD602038E23700F00ADC /* athlete_stats_200.json in Resources */,
+				1F5F572D204DF92100EA471F /* error_unauthorized_401.json in Resources */,
 				1F52BD502038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
+				1F5F5731204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,9 +852,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F5F571F204DEC4000EA471F /* error_rate_limit_403.json in Resources */,
+				1F5F571B204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD592038BC9400F00ADC /* current_athlete_200.json in Resources */,
 				1F52BD612038E23700F00ADC /* athlete_stats_200.json in Resources */,
+				1F5F572E204DF92100EA471F /* error_unauthorized_401.json in Resources */,
 				1F52BD512038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
+				1F5F5732204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1117,6 +1181,7 @@
 				1F52BD3A2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD492038A77200F00ADC /* SplitsMetric.swift in Sources */,
 				1F5CBB3D203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F5F5727204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */,
 				1F52BD3F2038A65000F00ADC /* Map.swift in Sources */,
 				1FF53F801FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
 				1FF53F671FF5329D00E12D4F /* Club.swift in Sources */,
@@ -1125,7 +1190,10 @@
 				1FF53F901FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD302038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F861FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5734204E8AE100EA471F /* Data.swift in Sources */,
+				1F5F5722204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6B1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FB22C08204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2B2038A60900F00ADC /* Gear.swift in Sources */,
 				1F52BD442038A65D00F00ADC /* Photo.swift in Sources */,
 				1FF53F751FF5401800E12D4F /* HTTPMethod.swift in Sources */,
@@ -1153,6 +1221,7 @@
 				1F52BD3C2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD4B2038A77200F00ADC /* SplitsMetric.swift in Sources */,
 				1F5CBB3F203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F5F5729204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */,
 				1F52BD412038A65000F00ADC /* Map.swift in Sources */,
 				1FF53F821FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
 				1FF53F691FF5329D00E12D4F /* Club.swift in Sources */,
@@ -1161,7 +1230,10 @@
 				1FF53F921FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD322038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F881FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5736204E8AE100EA471F /* Data.swift in Sources */,
+				1F5F5724204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6D1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2D2038A60900F00ADC /* Gear.swift in Sources */,
 				1F52BD462038A65D00F00ADC /* Photo.swift in Sources */,
 				1FF53F771FF5401800E12D4F /* HTTPMethod.swift in Sources */,
@@ -1179,6 +1251,7 @@
 				1F52BD3D2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD4C2038A77200F00ADC /* SplitsMetric.swift in Sources */,
 				1F5CBB40203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F5F572A204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */,
 				1F52BD422038A65000F00ADC /* Map.swift in Sources */,
 				1FF53F831FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
 				1FF53F6A1FF5329D00E12D4F /* Club.swift in Sources */,
@@ -1187,7 +1260,10 @@
 				1FF53F931FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD332038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F891FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5737204E8AE100EA471F /* Data.swift in Sources */,
+				1F5F5725204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6E1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FB22C0B204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2E2038A60900F00ADC /* Gear.swift in Sources */,
 				1F52BD472038A65D00F00ADC /* Photo.swift in Sources */,
 				1FF53F781FF5401800E12D4F /* HTTPMethod.swift in Sources */,
@@ -1205,6 +1281,7 @@
 				1F52BD3B2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD4A2038A77200F00ADC /* SplitsMetric.swift in Sources */,
 				1F5CBB3E203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F5F5728204DF6CA00EA471F /* HTTPURLResponse.swift in Sources */,
 				1F52BD402038A65000F00ADC /* Map.swift in Sources */,
 				1FF53F811FF5487E00E12D4F /* URLResourceRequestConvertible.swift in Sources */,
 				1FF53F681FF5329D00E12D4F /* Club.swift in Sources */,
@@ -1213,7 +1290,10 @@
 				1FF53F911FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD312038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F871FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
+				1F5F5735204E8AE100EA471F /* Data.swift in Sources */,
+				1F5F5723204DF00800EA471F /* Errors.swift in Sources */,
 				1FF53F6C1FF5329D00E12D4F /* Bike.swift in Sources */,
+				1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2C2038A60900F00ADC /* Gear.swift in Sources */,
 				1F52BD452038A65D00F00ADC /* Photo.swift in Sources */,
 				1FF53F761FF5401800E12D4F /* HTTPMethod.swift in Sources */,
