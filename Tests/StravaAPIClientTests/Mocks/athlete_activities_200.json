@@ -1,11 +1,11 @@
 [
     {
-        "id": 1409958476,
+        "id": 9999986666,
         "resource_state": 2,
         "external_id": "garmin_push_2501234984",
         "upload_id": 1521857472,
         "athlete": {
-            "id": 4246969,
+            "id": 9996969,
             "resource_state": 1
         },
         "name": "24’ Tabata 🏋️\u200d♀️",
@@ -22,7 +22,7 @@
         "end_latlng": null,
         "location_city": null,
         "location_state": null,
-        "location_country": "Portugal",
+        "location_country": "CountryName",
         "start_latitude": null,
         "start_longitude": null,
         "achievement_count": 0,
@@ -31,7 +31,7 @@
         "athlete_count": 1,
         "photo_count": 0,
         "map": {
-            "id": "a1409958476",
+            "id": "a9999986666",
             "summary_polyline": null,
             "resource_state": 2
         },
@@ -60,7 +60,7 @@
         "external_id": "garmin_push_2499581477",
         "upload_id": 1520367274,
         "athlete": {
-            "id": 4246969,
+            "id": 9996969,
             "resource_state": 1
         },
         "name": "30’ ☔️ ",
@@ -83,7 +83,7 @@
         ],
         "location_city": null,
         "location_state": null,
-        "location_country": "Portugal",
+        "location_country": "CountryName",
         "start_latitude": 41.21,
         "start_longitude": -8.62,
         "achievement_count": 3,
@@ -123,7 +123,7 @@
         "external_id": "garmin_push_2450216861",
         "upload_id": 1478700539,
         "athlete": {
-            "id": 4246969,
+            "id": 9996969,
             "resource_state": 1
         },
         "name": "8x1000",
@@ -146,7 +146,7 @@
         ],
         "location_city": null,
         "location_state": null,
-        "location_country": "Portugal",
+        "location_country": "CountryName",
         "start_latitude": 41.15,
         "start_longitude": -8.6,
         "achievement_count": 0,

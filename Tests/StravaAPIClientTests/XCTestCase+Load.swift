@@ -21,6 +21,13 @@ extension XCTestCase {
     }
 
     @discardableResult
+    func mockCorruptData(uri: String, verb: HTTPMethod = .get) -> Stub {
+
+        let data = Data([0,1,1,0,1])
+        return stub(http(verb, uri: uri), jsonData(data))
+    }
+
+    @discardableResult
     func mockServerEmptyData(path: String, verb: HTTPMethod = .get) -> Stub {
 
         return stub(http(verb, uri: path), http(500))

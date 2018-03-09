@@ -44,17 +44,16 @@ class StravaAPIClientMockTests: XCTestCase {
 
     // MARK: Errors
 
-    func testInvalidJSONResponse() {
+    func testInvalidJSONResponseKeyNotFound() {
 
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid")
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_keynotfound")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
                 case let .parsingError(parseError) = error,
                 case let .decode(decodingError) = parseError,
-                let decodedError = (decodingError as? DecodingError),
-                case let DecodingError.keyNotFound(codingKey, _) = decodedError {
+                case let DecodingError.keyNotFound(codingKey, _) = decodingError {
 
                 XCTAssertEqual(codingKey.stringValue, "resource_state")
                 expectation.fulfill()
@@ -67,6 +66,86 @@ class StravaAPIClientMockTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(stub)
     }
+
+    func testInvalidJSONResponseTypeMismatch() {
+
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_typemismatch")
+        let expectation = XCTestExpectation(description: "requestCurrentAthlete")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .parsingError(parseError) = error,
+                case let .decode(decodingError) = parseError,
+                case let DecodingError.typeMismatch(_, context) = decodingError {
+
+                XCTAssertEqual(context.codingPath.first!.stringValue, "id")
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testInvalidJSONResponseTypeDataCorrupted() {
+
+        let stub = self.mockCorruptData(uri: "\(Constants.apiPrefix)/athlete")
+        let expectation = XCTestExpectation(description: "requestCurrentAthlete")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .parsingError(parseError) = error,
+                case let .decode(decodingError) = parseError,
+                case let DecodingError.dataCorrupted(context) = decodingError {
+
+                XCTAssertEqual(context.debugDescription, "The given data was not valid JSON.")
+
+                if let error = context.underlyingError as NSError? {
+
+                    XCTAssertEqual(error.code, 3840)
+                    expectation.fulfill()
+
+                } else {
+
+                    XCTFail("🤔")
+                }
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    func testInvalidJSONResponseTypeValueNotFound() {
+
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_valuenotfound")
+        let expectation = XCTestExpectation(description: "requestCurrentAthlete")
+        self.client.requestCurrentAthlete { result in
+
+            if case let .failure(error) = result,
+                case let .parsingError(parseError) = error,
+                case let .decode(decodingError) = parseError,
+                case let DecodingError.valueNotFound(_, context) = decodingError {
+
+                XCTAssertEqual(context.codingPath.first!.stringValue, "id")
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
+
+    // TODO: error
 
     func testError404NotFound() {
 

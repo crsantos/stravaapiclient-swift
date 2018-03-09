@@ -76,13 +76,19 @@
 		1F5F572C204DF92100EA471F /* error_unauthorized_401.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572B204DF92100EA471F /* error_unauthorized_401.json */; };
 		1F5F572D204DF92100EA471F /* error_unauthorized_401.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572B204DF92100EA471F /* error_unauthorized_401.json */; };
 		1F5F572E204DF92100EA471F /* error_unauthorized_401.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572B204DF92100EA471F /* error_unauthorized_401.json */; };
-		1F5F5730204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
-		1F5F5731204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
-		1F5F5732204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */; };
+		1F5F5730204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json */; };
+		1F5F5731204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json */; };
+		1F5F5732204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F5F572F204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json */; };
 		1F5F5734204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
 		1F5F5735204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
 		1F5F5736204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
 		1F5F5737204E8AE100EA471F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5F5733204E8AE100EA471F /* Data.swift */; };
+		1F61585C2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61585B2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json */; };
+		1F61585D2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61585B2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json */; };
+		1F61585E2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61585B2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json */; };
+		1F6158602050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61585F2050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json */; };
+		1F6158612050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61585F2050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json */; };
+		1F6158622050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F61585F2050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json */; };
 		1FB22C08204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
@@ -195,8 +201,10 @@
 		1F5F5721204DF00800EA471F /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		1F5F5726204DF6CA00EA471F /* HTTPURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPURLResponse.swift; sourceTree = "<group>"; };
 		1F5F572B204DF92100EA471F /* error_unauthorized_401.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error_unauthorized_401.json; sourceTree = "<group>"; };
-		1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid.json; sourceTree = "<group>"; };
+		1F5F572F204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid_keynotfound.json; sourceTree = "<group>"; };
 		1F5F5733204E8AE100EA471F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		1F61585B2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid_typemismatch.json; sourceTree = "<group>"; };
+		1F61585F2050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid_valuenotfound.json; sourceTree = "<group>"; };
 		1FB22C07204AA29C00727745 /* APIErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
 		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
 		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
@@ -324,7 +332,9 @@
 			children = (
 				1F52BD4E2038BA1C00F00ADC /* athlete_activities_200.json */,
 				1F52BD5E2038E23700F00ADC /* athlete_stats_200.json */,
-				1F5F572F204DFC1800EA471F /* current_athlete_200_invalid.json */,
+				1F5F572F204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json */,
+				1F61585F2050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json */,
+				1F61585B2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json */,
 				1F52BD562038BC9400F00ADC /* current_athlete_200.json */,
 				1F5F5718204DD15700EA471F /* error_notfound_404.json */,
 				1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */,
@@ -807,9 +817,11 @@
 				1F5F5719204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD572038BC9400F00ADC /* current_athlete_200.json in Resources */,
 				1F52BD5F2038E23700F00ADC /* athlete_stats_200.json in Resources */,
+				1F61585C2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */,
+				1F6158602050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */,
 				1F5F572C204DF92100EA471F /* error_unauthorized_401.json in Resources */,
 				1F52BD4F2038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
-				1F5F5730204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */,
+				1F5F5730204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,9 +854,11 @@
 				1F5F571A204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD582038BC9400F00ADC /* current_athlete_200.json in Resources */,
 				1F52BD602038E23700F00ADC /* athlete_stats_200.json in Resources */,
+				1F61585D2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */,
+				1F6158612050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */,
 				1F5F572D204DF92100EA471F /* error_unauthorized_401.json in Resources */,
 				1F52BD502038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
-				1F5F5731204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */,
+				1F5F5731204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -856,9 +870,11 @@
 				1F5F571B204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD592038BC9400F00ADC /* current_athlete_200.json in Resources */,
 				1F52BD612038E23700F00ADC /* athlete_stats_200.json in Resources */,
+				1F61585E2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */,
+				1F6158622050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */,
 				1F5F572E204DF92100EA471F /* error_unauthorized_401.json in Resources */,
 				1F52BD512038BA1C00F00ADC /* athlete_activities_200.json in Resources */,
-				1F5F5732204DFC1800EA471F /* current_athlete_200_invalid.json in Resources */,
+				1F5F5732204DFC1800EA471F /* current_athlete_200_invalid_keynotfound.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
