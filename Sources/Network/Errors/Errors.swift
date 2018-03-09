@@ -28,8 +28,7 @@ public enum NetworkingError: Error {
 public enum ParseError: Error {
 
     case emptyResponse
-    case decode(DecodingError)
-    case invalid(Error)
+    case decode(Error)
 }
 
 public struct RateLimit {

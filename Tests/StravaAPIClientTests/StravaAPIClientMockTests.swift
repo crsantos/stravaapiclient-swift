@@ -113,7 +113,6 @@ class StravaAPIClientMockTests: XCTestCase {
                     XCTFail("🤔")
                 }
 
-
             } else if case let .failure(error) = result {
 
                 XCTFail("Error: \(error)")
