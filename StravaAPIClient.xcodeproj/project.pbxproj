@@ -604,7 +604,6 @@
 				52D6D9791BEFF229002C0205 /* Headers */,
 				52D6D97A1BEFF229002C0205 /* Resources */,
 				1F5EA4401FF51BD200ED872E /* Swiftlint */,
-				A57B600BA923FA8427DD75C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -624,7 +623,6 @@
 				52D6D9831BEFF229002C0205 /* Frameworks */,
 				52D6D9841BEFF229002C0205 /* Resources */,
 				D3EA07D1D66BFBC9B5EDA823 /* [CP] Embed Pods Frameworks */,
-				E4D7AB22C5EB27C4DF2F46B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -645,7 +643,6 @@
 				52D6D9DE1BEFFF6E002C0205 /* Frameworks */,
 				52D6D9DF1BEFFF6E002C0205 /* Headers */,
 				52D6D9E01BEFFF6E002C0205 /* Resources */,
-				53206FB135A0D3A2F29A9EC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -665,7 +662,6 @@
 				52D6D9EC1BEFFFBE002C0205 /* Frameworks */,
 				52D6D9ED1BEFFFBE002C0205 /* Headers */,
 				52D6D9EE1BEFFFBE002C0205 /* Resources */,
-				9F04656DC56EFBF3F2CD74EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -685,7 +681,6 @@
 				52D6DA0B1BF000BD002C0205 /* Frameworks */,
 				52D6DA0C1BF000BD002C0205 /* Headers */,
 				52D6DA0D1BF000BD002C0205 /* Resources */,
-				08F74DC1DE4FCCCA5FB5071C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -705,7 +700,6 @@
 				DD7502771C68FCFC006590AF /* Frameworks */,
 				DD7502781C68FCFC006590AF /* Resources */,
 				E3A4BAA022D3010BBBC9E060 /* [CP] Embed Pods Frameworks */,
-				30FF95AAB99BE9AB84EABBFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -726,7 +720,6 @@
 				DD75028A1C690C7A006590AF /* Frameworks */,
 				DD75028B1C690C7A006590AF /* Resources */,
 				AD43B7169BE4266F0B07ABFE /* [CP] Embed Pods Frameworks */,
-				2C898D4E0C26B054D52438F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -745,7 +738,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = crsantos.info;
 				TargetAttributes = {
 					52D6D97B1BEFF229002C0205 = {
@@ -899,21 +892,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		08F74DC1DE4FCCCA5FB5071C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS/Pods-StravaAPIClientBase-StravaAPIClient-macOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1F5EA4401FF51BD200ED872E /* Swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -927,36 +905,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = ./scripts/swiftlint.sh;
-		};
-		2C898D4E0C26B054D52438F4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		30FF95AAB99BE9AB84EABBFB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		4268FBAD91FE507DFB52B7B5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -974,21 +922,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53206FB135A0D3A2F29A9EC5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-watchOS/Pods-StravaAPIClientBase-StravaAPIClient-watchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		608AB99377DFED1DBA28DC6F /* [CP] Check Pods Manifest.lock */ = {
@@ -1009,21 +942,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9F04656DC56EFBF3F2CD74EB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS/Pods-StravaAPIClientBase-StravaAPIClient-tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A4701C41AA6131646949E6EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1040,21 +958,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A57B600BA923FA8427DD75C6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS/Pods-StravaAPIClientBase-StravaAPIClient-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AD43B7169BE4266F0B07ABFE /* [CP] Embed Pods Frameworks */ = {
@@ -1151,21 +1054,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4D7AB22C5EB27C4DF2F46B5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA2E1EB783BC96C4D786BA18 /* [CP] Check Pods Manifest.lock */ = {
@@ -1372,12 +1260,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -1430,12 +1320,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
