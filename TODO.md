@@ -5,7 +5,7 @@ Some missing tasks:
 - [x] Add basic CI integration
 - [ ] Carthage support
 - [ ] SPM support
-- [ ] pod lib lint on CI - via fastlane
+- [x] pod lib lint on CI - via fastlane
 - Add more endpoints:
   - [Activities](https://developers.strava.com/docs/reference/#api-Activities)
     - [ ] [Get Activity](https://developers.strava.com/docs/reference/#api-Activities-getActivityById)
@@ -25,7 +25,7 @@ Some missing tasks:
     - [ ] [List Club Administrators.](https://developers.strava.com/docs/reference/#api-Clubs-getClubAdminsById)
     - [ ] [Get Club](https://developers.strava.com/docs/reference/#api-Clubs-getClubById)
     - [ ] [List Club Members](https://developers.strava.com/docs/reference/#api-Clubs-getClubMembersById)
-    - [ ] [List Athlete Clubs](https://developers.strava.com/docs/reference/#api-Clubs-getLoggedInAthleteClubs)
+    - [x] [List Athlete Clubs](https://developers.strava.com/docs/reference/#api-Clubs-getLoggedInAthleteClubs)
     - [ ] [Join Club](https://developers.strava.com/docs/reference/#api-Clubs-joinClubById)
     - [ ] [Leave Club](https://developers.strava.com/docs/reference/#api-Clubs-leaveClubById)
   - [Gears](https://developers.strava.com/docs/reference/#api-Gears)

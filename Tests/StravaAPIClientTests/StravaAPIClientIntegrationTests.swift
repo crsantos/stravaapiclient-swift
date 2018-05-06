@@ -85,4 +85,22 @@ class StravaAPIClientIntegrationTests: XCTestCase {
         }
         self.wait(for: [expectation], timeout: 2.0)
     }
+
+    func testRequestCurrentAthleteClubsIntegration() {
+
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteClubs")
+        self.client.requestCurrentAthleteClubs { result in
+
+            if case let .success(stats) = result {
+
+                debugPrint("Got Clubs: \(stats)")
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 2.0)
+    }
 }

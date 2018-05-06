@@ -402,4 +402,33 @@ class StravaAPIClientMockTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(stub)
     }
+
+    func testRequestCurrentAthleteClubsOk() {
+
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete/clubs", jsonFilename: "athlete_clubs_200")
+
+        let expectation = XCTestExpectation(description: "requestCurrentAthleteClubs")
+        self.client.requestCurrentAthleteClubs { result in
+
+            if case let .success(clubs) = result {
+
+                XCTAssertNotNil(clubs)
+                XCTAssertEqual(clubs.count, 1)
+                XCTAssertEqual(clubs.first?.profile, "https://dgalywyr863hv.cloudfront.net/pictures/clubs/231407/5319085/1/large.jpg")
+                XCTAssertEqual(clubs.first?.city, "San Francisco")
+                XCTAssertEqual(clubs.first?.country, "United States")
+                XCTAssertEqual(clubs.first?.verified, true)
+                XCTAssertEqual(clubs.first?.featured, false)
+                XCTAssertEqual(clubs.first?.coverPhoto, "https://dgalywyr863hv.cloudfront.net/pictures/clubs/231407/5098428/4/large.jpg")
+
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
 }

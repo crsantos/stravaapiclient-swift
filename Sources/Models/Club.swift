@@ -24,6 +24,7 @@ public struct Club: Codable {
     let purplePrivate: Bool
     let memberCount: Int
     let featured: Bool
+    let verified: Bool
     let url: String
 
     enum CodingKeys: String, CodingKey {
@@ -42,6 +43,7 @@ public struct Club: Codable {
         case purplePrivate = "private"
         case memberCount = "member_count"
         case featured = "featured"
+        case verified = "verified"
         case url = "url"
     }
 }

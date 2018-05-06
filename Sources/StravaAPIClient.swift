@@ -41,4 +41,9 @@ public class StravaAPIClient {
 
         self.networking.request(with: StravaAPIRouter.getAthleteStats(athleteId), completion: completion)
     }
+
+    func requestCurrentAthleteClubs(with completion: @escaping APICompletion<[Club]>) {
+
+        self.networking.request(with: StravaAPIRouter.getCurrentAthleteClubs, completion: completion)
+    }
 }
