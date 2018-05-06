@@ -93,6 +93,9 @@
 		1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C0B204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
+		1FD29B8A209F21F10033504F /* athlete_clubs_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FD29B89209F21F10033504F /* athlete_clubs_200.json */; };
+		1FD29B8B209F21F10033504F /* athlete_clubs_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FD29B89209F21F10033504F /* athlete_clubs_200.json */; };
+		1FD29B8C209F21F10033504F /* athlete_clubs_200.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FD29B89209F21F10033504F /* athlete_clubs_200.json */; };
 		1FF53F671FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
 		1FF53F681FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
 		1FF53F691FF5329D00E12D4F /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF53F621FF5329D00E12D4F /* Club.swift */; };
@@ -206,6 +209,7 @@
 		1F61585B2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid_typemismatch.json; sourceTree = "<group>"; };
 		1F61585F2050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = current_athlete_200_invalid_valuenotfound.json; sourceTree = "<group>"; };
 		1FB22C07204AA29C00727745 /* APIErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorModel.swift; sourceTree = "<group>"; };
+		1FD29B89209F21F10033504F /* athlete_clubs_200.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = athlete_clubs_200.json; sourceTree = "<group>"; };
 		1FF53F5B1FF531B200E12D4F /* swiftlint.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = swiftlint.sh; path = scripts/swiftlint.sh; sourceTree = "<group>"; };
 		1FF53F5C1FF531BB00E12D4F /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
 		1FF53F5D1FF531C400E12D4F /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -339,6 +343,7 @@
 				1F5F5718204DD15700EA471F /* error_notfound_404.json */,
 				1F5F571C204DEC4000EA471F /* error_rate_limit_403.json */,
 				1F5F572B204DF92100EA471F /* error_unauthorized_401.json */,
+				1FD29B89209F21F10033504F /* athlete_clubs_200.json */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -809,6 +814,7 @@
 				1F5F571D204DEC4000EA471F /* error_rate_limit_403.json in Resources */,
 				1F5F5719204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD572038BC9400F00ADC /* current_athlete_200.json in Resources */,
+				1FD29B8A209F21F10033504F /* athlete_clubs_200.json in Resources */,
 				1F52BD5F2038E23700F00ADC /* athlete_stats_200.json in Resources */,
 				1F61585C2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */,
 				1F6158602050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */,
@@ -846,6 +852,7 @@
 				1F5F571E204DEC4000EA471F /* error_rate_limit_403.json in Resources */,
 				1F5F571A204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD582038BC9400F00ADC /* current_athlete_200.json in Resources */,
+				1FD29B8B209F21F10033504F /* athlete_clubs_200.json in Resources */,
 				1F52BD602038E23700F00ADC /* athlete_stats_200.json in Resources */,
 				1F61585D2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */,
 				1F6158612050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */,
@@ -862,6 +869,7 @@
 				1F5F571F204DEC4000EA471F /* error_rate_limit_403.json in Resources */,
 				1F5F571B204DD15700EA471F /* error_notfound_404.json in Resources */,
 				1F52BD592038BC9400F00ADC /* current_athlete_200.json in Resources */,
+				1FD29B8C209F21F10033504F /* athlete_clubs_200.json in Resources */,
 				1F52BD612038E23700F00ADC /* athlete_stats_200.json in Resources */,
 				1F61585E2050A45700CD11C2 /* current_athlete_200_invalid_typemismatch.json in Resources */,
 				1F6158622050A92700CD11C2 /* current_athlete_200_invalid_valuenotfound.json in Resources */,

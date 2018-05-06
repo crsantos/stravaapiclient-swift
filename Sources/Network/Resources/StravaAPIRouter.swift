@@ -18,6 +18,7 @@ enum StravaAPIRouter {
 
     case getCurrentAthlete
     case getCurrentAthleteActivities
+    case getCurrentAthleteClubs
     case getAthleteStats(Int)
 }
 
@@ -55,6 +56,10 @@ fileprivate extension StravaAPIRouter {
 
             return "athlete/activities"
 
+        case .getCurrentAthleteClubs:
+
+            return "athlete/clubs"
+
         case .getAthleteStats(let athleteId):
 
             return ["athletes", String(athleteId), "stats"].joined(separator: "/")
@@ -70,15 +75,10 @@ fileprivate extension StravaAPIRouter {
 
         switch self {
 
-        case .getCurrentAthlete:
-
-            return .get
-
-        case .getCurrentAthleteActivities:
-
-            return .get
-
-        case .getAthleteStats:
+        case .getCurrentAthlete,
+             .getCurrentAthleteActivities,
+             .getCurrentAthleteClubs,
+             .getAthleteStats:
 
             return .get
         }
