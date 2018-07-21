@@ -180,6 +180,7 @@
 		06C3E0B63DE6437EA8E180D5 /* Pods_StravaAPIClient_StravaAPIClient_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StravaAPIClient_StravaAPIClient_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2043F7203E2043005532FC /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
 		1F2043F8203E2A42005532FC /* .codeclimate.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codeclimate.yml; sourceTree = "<group>"; };
+		1F2BD2292103CEB600BBBA89 /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		1F407E52203332C3002C9192 /* .circleci */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .circleci; sourceTree = "<group>"; };
 		1F407E5320333302002C9192 /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 		1F52BD252038A4D500F00ADC /* SummaryActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryActivity.swift; sourceTree = "<group>"; };
@@ -348,6 +349,7 @@
 				1FF53F601FF531D800E12D4F /* .swiftlint.yml */,
 				1F2043F8203E2A42005532FC /* .codeclimate.yml */,
 				1FF53F5C1FF531BB00E12D4F /* Gemfile */,
+				1F2BD2292103CEB600BBBA89 /* Dangerfile */,
 				1FF53F5D1FF531C400E12D4F /* LICENSE */,
 				1FF53F5E1FF531C400E12D4F /* README.md */,
 				1F2043F7203E2043005532FC /* TODO.md */,
