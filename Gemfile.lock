@@ -238,7 +238,7 @@ PLATFORMS
 
 DEPENDENCIES
   cocoapods (~> 1.5)
-  danger
+  danger (~> 5.6)
   fastlane (~> 2.91)
   slather (~> 2.4)
 
