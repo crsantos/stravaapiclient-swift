@@ -6,6 +6,7 @@ disabled_rules: # rule identifiers to exclude from running
   #- large_tuple
   #- empty_enum_arguments
   - nesting
+  - identifier_name
 included:
   - Sources
 excluded:
