@@ -24,7 +24,6 @@ jobs:
       - restore_cache:
           keys:
             - v3-homebrew-{{ epoch }}
-            - v3-homebrew
       - run:
           name: Bundle install
           command: |
