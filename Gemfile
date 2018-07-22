@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "~> 2.4"
+ruby "~> 2.5"
 
 gem 'cocoapods', '~> 1.5'
 gem 'fastlane', '~> 2.91'
