@@ -8,7 +8,7 @@ Some missing tasks:
 - [x] pod lib lint on CI - via fastlane
 - Add more endpoints:
   - [Activities](https://developers.strava.com/docs/reference/#api-Activities)
-    - [ ] [Get Activity](https://developers.strava.com/docs/reference/#api-Activities-getActivityById)
+    - [x] [Get Activity](https://developers.strava.com/docs/reference/#api-Activities-getActivityById)
     - [ ] [List Activity Comments](https://developers.strava.com/docs/reference/#api-Activities-getCommentsByActivityId)
     - [ ] [List Activity Kudoers](https://developers.strava.com/docs/reference/#api-Activities-getKudoersByActivityId)
     - [ ] [List Activity Laps](https://developers.strava.com/docs/reference/#api-Activities-getLapsByActivityId)
@@ -53,4 +53,3 @@ Some missing tasks:
     - [ ] [Upload Activity](https://developers.strava.com/docs/reference/#api-Uploads-createUpload)
     - [ ] [Get Upload](https://developers.strava.com/docs/reference/#api-Uploads-getUploadById)
 - [ ] Add mock tests for those endpoints
-

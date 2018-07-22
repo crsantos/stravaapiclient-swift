@@ -8,6 +8,45 @@
 
 import Foundation
 
+struct SegmentEffort: Codable {
+
+    let id, resourceState: Int
+    let name: String
+    let activity: MetaActivity
+    let athlete: MetaAthlete
+    let elapsedTime, movingTime: Int
+    let startDate, startDateLocal: String
+    let distance: Double
+    let startIndex, endIndex: Int
+    let averageCadence: Double
+    let deviceWatts: Bool
+    let averageWatts: Double
+    let segment: Segment
+    let komRank, prRank: JSONNull?
+    let hidden: Bool
+
+    enum CodingKeys: String, CodingKey {
+
+        case id
+        case resourceState = "resource_state"
+        case name, activity, athlete
+        case elapsedTime = "elapsed_time"
+        case movingTime = "moving_time"
+        case startDate = "start_date"
+        case startDateLocal = "start_date_local"
+        case distance
+        case startIndex = "start_index"
+        case endIndex = "end_index"
+        case averageCadence = "average_cadence"
+        case deviceWatts = "device_watts"
+        case averageWatts = "average_watts"
+        case segment
+        case komRank = "kom_rank"
+        case prRank = "pr_rank"
+        case hidden
+    }
+}
+
 struct Segment: Codable {
 
     let id, resourceState: Int

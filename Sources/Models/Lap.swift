@@ -13,8 +13,8 @@ struct Lap: Codable {
     let id: Int
     let resourceState: Int
     let name: String
-    let activity: Athlete
-    let athlete: Athlete
+    let activity: MetaActivity
+    let athlete: MetaAthlete
     let elapsedTime: Int
     let movingTime: Int
     let startDate: String

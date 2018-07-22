@@ -431,4 +431,32 @@ class StravaAPIClientMockTests: XCTestCase {
         self.wait(for: [expectation], timeout: 1.0)
         self.removeStub(stub)
     }
+
+    func testActivityByIdOk() {
+
+        let stub = self.mock(uri: "\(Constants.apiPrefix)/activities/1234", jsonFilename: "activity_by_id")
+
+        let expectation = XCTestExpectation(description: "requestActivityById")
+        self.client.requestActivity(activityId: 1234) { result in
+
+            if case let .success(activity) = result {
+
+                XCTAssertNotNil(activity)
+                XCTAssertEqual(activity.id, 12345678987654321)
+                XCTAssertEqual(activity.athlete.id, 134815)
+                XCTAssertEqual(activity.calories, 870.2)
+                XCTAssertEqual(activity.athleteCount, 1)
+                XCTAssertEqual(activity.totalElevationGain, 516)
+                XCTAssertEqual(activity.kudosCount, 19)
+                XCTAssertEqual(activity.startLatlng?.first, 37.83)
+                expectation.fulfill()
+
+            } else if case let .failure(error) = result {
+
+                XCTFail("Error: \(error)")
+            }
+        }
+        self.wait(for: [expectation], timeout: 1.0)
+        self.removeStub(stub)
+    }
 }
