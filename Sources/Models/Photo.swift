@@ -8,6 +8,18 @@
 
 import Foundation
 
+struct ActivityPhotos: Codable {
+    let primary: Photo
+    let usePrimaryPhoto: Bool
+    let count: Int
+
+    enum CodingKeys: String, CodingKey {
+        case primary
+        case usePrimaryPhoto = "use_primary_photo"
+        case count
+    }
+}
+
 struct Photo: Codable {
 
     let id: JSONNull?

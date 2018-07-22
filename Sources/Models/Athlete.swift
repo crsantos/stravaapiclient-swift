@@ -72,7 +72,7 @@ public struct Athlete: Codable {
     }
 }
 
-struct AthleteId: Codable {
+struct MetaAthlete: Codable {
 
     let id, resourceState: Int
 

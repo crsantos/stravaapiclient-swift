@@ -62,7 +62,7 @@ struct SummaryActivity: Codable {
     let id, resourceState: Int
     let externalID: String
     let uploadID: Int
-    let athlete: AthleteId
+    let athlete: MetaAthlete
     let name: String
     let distance: Double
     let movingTime: Int
@@ -106,12 +106,12 @@ struct SummaryActivity: Codable {
     let sufferScore: JSONNull?
     let description: String?
     let calories: Double?
-    let segmentEfforts: [Lap]?
+    let segmentEfforts: [SegmentEffort]?
     let splitsMetric: [SplitsMetric]?
     let laps: [Lap]?
     let gear: Gear?
     let partnerBrandTag: JSONNull?
-    let photos: Photo?
+    let photos: ActivityPhotos?
     let highlightedKudosers: [HighlightedKudoser]?
     let deviceName: String?
     let embedToken: String?
@@ -181,5 +181,16 @@ struct SummaryActivity: Codable {
         case embedToken = "embed_token"
         case segmentLeaderboardOptOut = "segment_leaderboard_opt_out"
         case leaderboardOptOut = "leaderboard_opt_out"
+    }
+}
+
+struct MetaActivity: Codable {
+
+    let id, resourceState: Int
+
+    enum CodingKeys: String, CodingKey {
+
+        case id
+        case resourceState = "resource_state"
     }
 }
