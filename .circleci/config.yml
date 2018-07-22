@@ -27,7 +27,7 @@ jobs:
       - run:
           name: Bundle install
           command: |
-            chruby
+            echo "rubies $(chruby)"
             mkdir -p ~/test-reports
             gem update --system
             bundle check --path .bundle || bundle install --jobs=4 --retry=3 --path .bundle
