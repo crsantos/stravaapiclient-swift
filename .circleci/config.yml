@@ -29,6 +29,7 @@ jobs:
           command: |
             mkdir -p ~/test-reports
             gem update --system
+            gem install bundler
             bundle check --path .bundle || bundle install --jobs=4 --retry=3 --path .bundle
           environment:
             BUNDLE_JOBS: 4
