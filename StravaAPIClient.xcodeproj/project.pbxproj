@@ -964,7 +964,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
@@ -975,7 +975,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-tvOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BA0B76931863D5D586A3AC3E /* [CP] Check Pods Manifest.lock */ = {
@@ -1002,7 +1002,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
@@ -1013,7 +1013,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-iOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2D3E8B6E7223963F741230B /* [CP] Check Pods Manifest.lock */ = {
@@ -1040,7 +1040,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Mockingjay/Mockingjay.framework",
 				"${BUILT_PRODUCTS_DIR}/URITemplate/URITemplate.framework",
 			);
@@ -1051,7 +1051,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests/Pods-StravaAPIClientBase-StravaAPIClient-macOS Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA2E1EB783BC96C4D786BA18 /* [CP] Check Pods Manifest.lock */ = {
