@@ -8,13 +8,13 @@
 
 import Foundation
 
-fileprivate enum HeaderConstants {
+private enum HeaderConstants {
 
     static let rateLimitLimitKey = "X-RateLimit-Limit"
     static let rateLimitUsageKey = "X-RateLimit-Usage"
 }
 
-fileprivate typealias RateLimitGroup = (limit: RateLimit, usage: RateLimit)
+private typealias RateLimitGroup = (limit: RateLimit, usage: RateLimit)
 
 public enum NetworkingError: Error {
 
@@ -84,7 +84,7 @@ public enum APIHTTPError: Error {
 
 // MARK: - Private
 
-fileprivate extension APIHTTPError {
+private extension APIHTTPError {
 
     static func rateLimits(from response: HTTPURLResponse) -> RateLimitGroup? {
 

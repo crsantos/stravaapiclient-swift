@@ -23,8 +23,8 @@ public typealias APICompletion<T: Codable> = (Result<T, NetworkingError>) -> ()
 
 struct Networking {
 
-    fileprivate let requester: HTTPRequester = HTTPRequester()
-    fileprivate let requestSerializer: RequestSerializable
+    private let requester: HTTPRequester = HTTPRequester()
+    private let requestSerializer: RequestSerializable
 
     init(with config: AuthenticatableConfig, requestSerializerType: RequestSerializable.Type) {
 
@@ -44,7 +44,7 @@ struct Networking {
 
 // MARK: - Private
 
-fileprivate extension Networking {
+private extension Networking {
 
     func handleDataTaskResponse<T: Codable>(data: Data?, response: URLResponse?, error: Error?, completion: APICompletion<T>) {
 

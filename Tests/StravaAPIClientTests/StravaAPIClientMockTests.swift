@@ -13,7 +13,7 @@ import Mockingjay
 
 class StravaAPIClientMockTests: XCTestCase {
     
-    fileprivate enum Constants {
+    private enum Constants {
         
         static let clientId = "123456789"
         static let clientSecret = "s3cr3t"
@@ -23,7 +23,7 @@ class StravaAPIClientMockTests: XCTestCase {
         static let apiPrefix = "/api/v3"
     }
     
-    fileprivate var client: StravaAPIClient!
+    private var client: StravaAPIClient!
     
     override func setUp() {
         

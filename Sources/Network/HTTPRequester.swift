@@ -13,7 +13,7 @@ public typealias URLSessionDataTaskCompletion = (Data?, URLResponse?, Error?) ->
 
 struct HTTPRequester {
 
-    fileprivate let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
+    private let session: URLSession = URLSession(configuration: URLSessionConfiguration.default)
 
     @discardableResult
     func request(with request: URLRequest, completion: @escaping URLSessionDataTaskCompletion) -> URLSessionDataTask {
