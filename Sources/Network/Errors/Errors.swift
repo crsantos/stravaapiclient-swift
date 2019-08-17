@@ -16,80 +16,103 @@ private enum HeaderConstants {
 
 private typealias RateLimitGroup = (limit: RateLimit, usage: RateLimit)
 
-public enum NetworkingError: Error {
-
-    case generic
-    case emptyData
-    case underlyingError(Error)
-    case parsingError(ParseError)
-    case apiError(APIHTTPError, APIErrorModel)
-}
-
-public enum ParseError: Error {
-
-    case emptyResponse
-    case decode(Error)
-}
-
 public struct RateLimit {
 
     let shortTerm: Int
     let longTerm: Int
 }
 
-public enum APIHTTPError: Error {
+public struct StravaAPIErrorModel: Codable {
 
-    case notFound
-    case unauthorized
-    case rateLimitingExceeded(RateLimit, RateLimit)
-    case forbidden
-    case unknown
+    let message: String
+    let errors: [StravarAPIErrorElement]
 
-    static func fromResponse(_ response: HTTPURLResponse) -> APIHTTPError {
+    enum CodingKeys: String, CodingKey {
 
-        let httpAPIError: APIHTTPError
+        case message
+        case errors
+    }
+}
 
-        switch response.statusCode {
+public struct StravarAPIErrorElement: Codable {
 
-        case 401:
+    let resource: String
+    let field: String
+    let code: String
 
-            httpAPIError = .unauthorized
+    enum CodingKeys: String, CodingKey {
 
-        case 404:
+        case resource
+        case field
+        case code
+    }
+}
 
-            httpAPIError = .notFound
+public struct StravaAPIError: APIError {
 
-        case 403:
+    public let errorModel: StravaAPIErrorModel?
 
-            if let rateLimitGroup = APIHTTPError.rateLimits(from: response) {
+    private let response: HTTPURLResponse
+    private let errorType: APIErrorType
 
-                httpAPIError = .rateLimitingExceeded(
-                    rateLimitGroup.limit,
-                    rateLimitGroup.usage
-                )
+    public init(response: HTTPURLResponse, data: Data) throws {
 
-            } else {
+        self.errorType = APIErrorType(response)
+        self.response = response
+        self.errorModel = try Self.parse(data)
+    }
+}
 
-                httpAPIError = .forbidden
+extension StravaAPIError {
+
+    enum APIErrorType {
+        case notFound
+        case unauthorized
+        case rateLimitingExceeded(RateLimit, RateLimit)
+        case forbidden
+        case unknown
+
+        public init(_ response: HTTPURLResponse) {
+
+            switch response.statusCode {
+
+            case 401: self = .unauthorized
+
+            case 404: self = .notFound
+
+            case 403:
+                if let rateLimitGroup = response.rateLimits {
+                    self = .rateLimitingExceeded(
+                        rateLimitGroup.limit,
+                        rateLimitGroup.usage
+                    )
+                } else {
+                    self = .forbidden
+                }
+
+            default:
+                self = .unknown
             }
-
-        default:
-
-            httpAPIError = .unknown
         }
-
-        return httpAPIError
     }
 }
 
 // MARK: - Private
 
-private extension APIHTTPError {
+private extension StravaAPIError {
 
-    static func rateLimits(from response: HTTPURLResponse) -> RateLimitGroup? {
+    static func parse<T: Codable>(_ data: Data) throws -> T {
 
-        if let rateLimitLimit = response.allHeaderFields[HeaderConstants.rateLimitLimitKey] as? String,
-            let rateLimitUsage = response.allHeaderFields[HeaderConstants.rateLimitUsageKey] as? String {
+        return try JSONDecoder().decode(T.self, from: data)
+    }
+}
+
+private extension HTTPURLResponse {
+
+    var rateLimits: RateLimitGroup? {
+
+        if let rateLimitLimit = self.allHeaderFields[HeaderConstants.rateLimitLimitKey] as? String,
+            let rateLimitUsage = self.allHeaderFields[HeaderConstants.rateLimitUsageKey] as? String {
 
             let usageTuple = rateLimitUsage.split(separator: ",")
             let limitTuple = rateLimitLimit.split(separator: ",")
