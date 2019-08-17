@@ -13,7 +13,7 @@ def all_pods
 end
 
 def test_pods
-  pod 'Mockingjay'
+  pod 'OHHTTPStubs/Swift'
 end
 
 abstract_target 'StravaAPIClientBase' do

@@ -51,9 +51,9 @@ public struct StravarAPIErrorElement: Codable {
 public struct StravaAPIError: APIError {
 
     public let errorModel: StravaAPIErrorModel?
+    public let errorType: APIErrorType
 
     private let response: HTTPURLResponse
-    private let errorType: APIErrorType
 
     public init(response: HTTPURLResponse, data: Data) throws {
 
@@ -63,13 +63,14 @@ public struct StravaAPIError: APIError {
     }
 }
 
-extension StravaAPIError {
+public extension StravaAPIError {
 
     enum APIErrorType {
         case notFound
         case unauthorized
         case rateLimitingExceeded(RateLimit, RateLimit)
         case forbidden
+        case serverError
         case unknown
 
         public init(_ response: HTTPURLResponse) {
@@ -89,6 +90,8 @@ extension StravaAPIError {
                 } else {
                     self = .forbidden
                 }
+
+            case (500...599): self = .serverError
 
             default:
                 self = .unknown
