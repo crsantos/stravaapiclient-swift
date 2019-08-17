@@ -1,5 +1,5 @@
 //
-//  Errors.swift
+//  StravaErrors.swift
 //  StravaAPIClient
 //
 //  Created by Carlos Santos on 05/03/2018.
