@@ -22,32 +22,6 @@ public struct RateLimit {
     let longTerm: Int
 }
 
-public struct StravaAPIErrorModel: Codable {
-
-    let message: String
-    let errors: [StravarAPIErrorElement]
-
-    enum CodingKeys: String, CodingKey {
-
-        case message
-        case errors
-    }
-}
-
-public struct StravarAPIErrorElement: Codable {
-
-    let resource: String
-    let field: String
-    let code: String
-
-    enum CodingKeys: String, CodingKey {
-
-        case resource
-        case field
-        case code
-    }
-}
-
 public struct StravaAPIError: APIError {
 
     public let errorModel: StravaAPIErrorModel?
