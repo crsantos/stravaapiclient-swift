@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "StravaAPIClient"
-  s.version      = "0.3.0"
+  s.version      = "1.0.0"
   s.summary      = "Strava Swift API Client"
   s.description  = <<-DESC
     This is a Swift implementation of the Strava Swift API Client (v3)

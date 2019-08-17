@@ -19,12 +19,12 @@ public struct StravaConfig: AuthenticatableConfig {
 public class StravaAPIClient {
 
     let config: StravaConfig
-    let networking: Networking
+    let networking: CRNetworking
 
     init(with config: StravaConfig) {
 
         self.config = config
-        self.networking = Networking(with: config, requestSerializerType: RequestSerializer.self)
+        self.networking = CRNetworking(with: config, requestSerializerType: RequestSerializer.self)
     }
 
     func requestCurrentAthlete(with completion: @escaping APICompletion<Athlete>) {
