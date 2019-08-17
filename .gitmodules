@@ -1,3 +1,0 @@
-[submodule "Vendor/CRNetworking"]
-	path = Vendor/CRNetworking
-	url = git@github.com:crsantos/CRNetworking.git
