@@ -91,6 +91,27 @@
 		1F82CD1423086291003B0BE0 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0B23086291003B0BE0 /* HTTPURLResponse.swift */; };
 		1F82CD1523086291003B0BE0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0D23086291003B0BE0 /* Errors.swift */; };
 		1F82CD1623086291003B0BE0 /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0F23086291003B0BE0 /* URLResourceRequestConvertible.swift */; };
+		1F82CD1723095E43003B0BE0 /* CRNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0523086291003B0BE0 /* CRNetworking.swift */; };
+		1F82CD1823095E44003B0BE0 /* CRNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0523086291003B0BE0 /* CRNetworking.swift */; };
+		1F82CD1923095E45003B0BE0 /* CRNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0523086291003B0BE0 /* CRNetworking.swift */; };
+		1F82CD1A23095E47003B0BE0 /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0623086291003B0BE0 /* HTTPRequester.swift */; };
+		1F82CD1B23095E48003B0BE0 /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0623086291003B0BE0 /* HTTPRequester.swift */; };
+		1F82CD1C23095E48003B0BE0 /* HTTPRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0623086291003B0BE0 /* HTTPRequester.swift */; };
+		1F82CD1D23095E4C003B0BE0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0823086291003B0BE0 /* HTTPMethod.swift */; };
+		1F82CD1E23095E4D003B0BE0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0823086291003B0BE0 /* HTTPMethod.swift */; };
+		1F82CD1F23095E4D003B0BE0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0823086291003B0BE0 /* HTTPMethod.swift */; };
+		1F82CD2023095E53003B0BE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0A23086291003B0BE0 /* Data.swift */; };
+		1F82CD2123095E53003B0BE0 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0B23086291003B0BE0 /* HTTPURLResponse.swift */; };
+		1F82CD2223095E53003B0BE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0A23086291003B0BE0 /* Data.swift */; };
+		1F82CD2323095E53003B0BE0 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0B23086291003B0BE0 /* HTTPURLResponse.swift */; };
+		1F82CD2423095E54003B0BE0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0A23086291003B0BE0 /* Data.swift */; };
+		1F82CD2523095E54003B0BE0 /* HTTPURLResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0B23086291003B0BE0 /* HTTPURLResponse.swift */; };
+		1F82CD2623095E58003B0BE0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0D23086291003B0BE0 /* Errors.swift */; };
+		1F82CD2723095E58003B0BE0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0D23086291003B0BE0 /* Errors.swift */; };
+		1F82CD2823095E59003B0BE0 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0D23086291003B0BE0 /* Errors.swift */; };
+		1F82CD2923095E5D003B0BE0 /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0F23086291003B0BE0 /* URLResourceRequestConvertible.swift */; };
+		1F82CD2A23095E5D003B0BE0 /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0F23086291003B0BE0 /* URLResourceRequestConvertible.swift */; };
+		1F82CD2B23095E5E003B0BE0 /* URLResourceRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F82CD0F23086291003B0BE0 /* URLResourceRequestConvertible.swift */; };
 		1FB22C08204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
 		1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB22C07204AA29C00727745 /* APIErrorModel.swift */; };
@@ -1124,11 +1145,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8933C7871EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1F82CD1C23095E48003B0BE0 /* HTTPRequester.swift in Sources */,
 				1F52BD3C2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD4B2038A77200F00ADC /* SplitsMetric.swift in Sources */,
+				1F82CD2323095E53003B0BE0 /* HTTPURLResponse.swift in Sources */,
 				1F5CBB3F203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F82CD1823095E44003B0BE0 /* CRNetworking.swift in Sources */,
 				1F52BD412038A65000F00ADC /* Map.swift in Sources */,
+				1F82CD2223095E53003B0BE0 /* Data.swift in Sources */,
 				1FF53F691FF5329D00E12D4F /* Club.swift in Sources */,
+				1F82CD1E23095E4D003B0BE0 /* HTTPMethod.swift in Sources */,
 				1FF53F921FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD322038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F881FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
@@ -1136,10 +1162,12 @@
 				1FF53F6D1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C0A204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2D2038A60900F00ADC /* Gear.swift in Sources */,
+				1F82CD2723095E58003B0BE0 /* Errors.swift in Sources */,
 				1F52BD462038A65D00F00ADC /* Photo.swift in Sources */,
 				1F52BD282038A4D500F00ADC /* SummaryActivity.swift in Sources */,
 				1FF53F711FF5329D00E12D4F /* Athlete.swift in Sources */,
 				1F52BD372038A63000F00ADC /* Lap.swift in Sources */,
+				1F82CD2A23095E5D003B0BE0 /* URLResourceRequestConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1148,11 +1176,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8933C7881EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1F82CD1B23095E48003B0BE0 /* HTTPRequester.swift in Sources */,
 				1F52BD3D2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD4C2038A77200F00ADC /* SplitsMetric.swift in Sources */,
+				1F82CD2123095E53003B0BE0 /* HTTPURLResponse.swift in Sources */,
 				1F5CBB40203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F82CD1723095E43003B0BE0 /* CRNetworking.swift in Sources */,
 				1F52BD422038A65000F00ADC /* Map.swift in Sources */,
+				1F82CD2023095E53003B0BE0 /* Data.swift in Sources */,
 				1FF53F6A1FF5329D00E12D4F /* Club.swift in Sources */,
+				1F82CD1D23095E4C003B0BE0 /* HTTPMethod.swift in Sources */,
 				1FF53F931FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD332038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F891FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
@@ -1160,10 +1193,12 @@
 				1FF53F6E1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C0B204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2E2038A60900F00ADC /* Gear.swift in Sources */,
+				1F82CD2823095E59003B0BE0 /* Errors.swift in Sources */,
 				1F52BD472038A65D00F00ADC /* Photo.swift in Sources */,
 				1F52BD292038A4D500F00ADC /* SummaryActivity.swift in Sources */,
 				1FF53F721FF5329D00E12D4F /* Athlete.swift in Sources */,
 				1F52BD382038A63000F00ADC /* Lap.swift in Sources */,
+				1F82CD2923095E5D003B0BE0 /* URLResourceRequestConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1172,11 +1207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8933C7861EB5B820000D00A4 /* StravaAPIClient.swift in Sources */,
+				1F82CD1A23095E47003B0BE0 /* HTTPRequester.swift in Sources */,
 				1F52BD3B2038A64200F00ADC /* Segment.swift in Sources */,
 				1F52BD4A2038A77200F00ADC /* SplitsMetric.swift in Sources */,
+				1F82CD2523095E54003B0BE0 /* HTTPURLResponse.swift in Sources */,
 				1F5CBB3E203D643700625DBF /* AthleteStats.swift in Sources */,
+				1F82CD1923095E45003B0BE0 /* CRNetworking.swift in Sources */,
 				1F52BD402038A65000F00ADC /* Map.swift in Sources */,
+				1F82CD2423095E54003B0BE0 /* Data.swift in Sources */,
 				1FF53F681FF5329D00E12D4F /* Club.swift in Sources */,
+				1F82CD1F23095E4D003B0BE0 /* HTTPMethod.swift in Sources */,
 				1FF53F911FF5A78700E12D4F /* RequestSerializer.swift in Sources */,
 				1F52BD312038A61900F00ADC /* HighlightedKudoser.swift in Sources */,
 				1FF53F871FF54A0E00E12D4F /* StravaAPIRouter.swift in Sources */,
@@ -1184,10 +1224,12 @@
 				1FF53F6C1FF5329D00E12D4F /* Bike.swift in Sources */,
 				1FB22C09204AA29C00727745 /* APIErrorModel.swift in Sources */,
 				1F52BD2C2038A60900F00ADC /* Gear.swift in Sources */,
+				1F82CD2623095E58003B0BE0 /* Errors.swift in Sources */,
 				1F52BD452038A65D00F00ADC /* Photo.swift in Sources */,
 				1F52BD272038A4D500F00ADC /* SummaryActivity.swift in Sources */,
 				1FF53F701FF5329D00E12D4F /* Athlete.swift in Sources */,
 				1F52BD362038A63000F00ADC /* Lap.swift in Sources */,
+				1F82CD2B23095E5E003B0BE0 /* URLResourceRequestConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
