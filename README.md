@@ -50,7 +50,7 @@ self.client.requestCurrentAthleteActivities { result in
 
 #### Endpoints
 
-This is still a WIP,  but I will add new requests **soon**.
+This is still a WIP,  but I'm adding new requests. Feel free to contribute with some more.
 
 #### `GET /athlete`
 

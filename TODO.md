@@ -4,8 +4,9 @@ Some missing tasks:
 
 - [x] Add basic CI integration
 - [ ] Carthage support
-- [ ] SPM support
+- [ ] Add support for SPM
 - [x] pod lib lint on CI - via fastlane
+- [x] Abstract network layer (CRNetworking is a proposal - testing it atm)
 - Add more endpoints:
   - [Activities](https://developers.strava.com/docs/reference/#api-Activities)
     - [x] [Get Activity](https://developers.strava.com/docs/reference/#api-Activities-getActivityById)
@@ -52,4 +53,4 @@ Some missing tasks:
   - [Uploads](https://developers.strava.com/docs/reference/#api-Uploads)
     - [ ] [Upload Activity](https://developers.strava.com/docs/reference/#api-Uploads-createUpload)
     - [ ] [Get Upload](https://developers.strava.com/docs/reference/#api-Uploads-getUploadById)
-- [ ] Add mock tests for those endpoints
+- [ ] Add mock tests for those endpoints (WIP)

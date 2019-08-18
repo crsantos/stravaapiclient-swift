@@ -33,7 +33,7 @@ public struct StravaAPIError: APIError {
 
         self.errorType = APIErrorType(response)
         self.response = response
-        self.errorModel = try Self.parse(data)
+        self.errorModel = try type(of: self).parse(data)
     }
 }
 
