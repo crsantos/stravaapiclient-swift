@@ -1,5 +1,5 @@
 # Sources configuration
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://cdn.cocoapods.org/'
 
 workspace 'StravaSwiftAPIClient'
 

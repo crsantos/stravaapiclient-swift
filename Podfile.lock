@@ -19,7 +19,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - OHHTTPStubs
     - SwiftLint
 
@@ -27,6 +27,6 @@ SPEC CHECKSUMS:
   OHHTTPStubs: 9cbce6364bec557cc3439aa6bb7514670d780881
   SwiftLint: 79d48a17c6565dc286c37efb8322c7b450f95c67
 
-PODFILE CHECKSUM: 7aa9bfe37b76b8d898b665eeea47323120e267f9
+PODFILE CHECKSUM: b6157b432153ed6165c5bcbb0531a2881e1bb08f
 
 COCOAPODS: 1.7.5
