@@ -17,6 +17,9 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+## SPM
+.swiftpm
+
 ## Other
 *.moved-aside
 *.xccheckout

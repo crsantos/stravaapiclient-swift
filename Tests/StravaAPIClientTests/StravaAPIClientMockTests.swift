@@ -9,11 +9,11 @@
 import Foundation
 import XCTest
 @testable import StravaAPIClient
-import Mockingjay
+import OHHTTPStubs
 
 class StravaAPIClientMockTests: XCTestCase {
     
-    fileprivate enum Constants {
+    private enum Constants {
         
         static let clientId = "123456789"
         static let clientSecret = "s3cr3t"
@@ -23,10 +23,12 @@ class StravaAPIClientMockTests: XCTestCase {
         static let apiPrefix = "/api/v3"
     }
     
-    fileprivate var client: StravaAPIClient!
+    private var client: StravaAPIClient!
     
     override func setUp() {
-        
+
+        super.setUp()
+
         let config = StravaConfig(
             clientId: Constants.clientId,
             clientSecret: Constants.clientSecret,
@@ -39,14 +41,14 @@ class StravaAPIClientMockTests: XCTestCase {
     override func tearDown() {
         
         super.tearDown()
-        self.removeAllStubs()
+        OHHTTPStubs.removeAllStubs()
     }
 
     // MARK: Errors
 
     func testInvalidJSONResponseKeyNotFound() {
 
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_keynotfound")
+        self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_keynotfound.json")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
 
@@ -64,12 +66,11 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testInvalidJSONResponseTypeMismatch() {
 
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_typemismatch")
+        self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_typemismatch.json")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
 
@@ -87,12 +88,11 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testInvalidJSONResponseTypeDataCorrupted() {
 
-        let stub = self.mockCorruptData(uri: "\(Constants.apiPrefix)/athlete")
+        self.mockCorruptData(uri: "\(Constants.apiPrefix)/athlete")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
 
@@ -119,12 +119,11 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testInvalidJSONResponseTypeValueNotFound() {
 
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_valuenotfound")
+        self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200_invalid_valuenotfound.json")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
 
@@ -142,21 +141,20 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     // TODO: error
 
     func testError404NotFound() {
 
-        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_notfound_404", status: 404)
+        self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_notfound_404.json", status: 404)
         let expectation = XCTestExpectation(description: "requestCurrentAthleteError404")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
-                case let .apiError(apiError, errorModel) = error,
-                case .notFound = apiError,
-                errorModel.errors.count == 1 {
+                case let .apiError(apiError) = error,
+                case .notFound = apiError.errorType,
+                apiError.errorModel?.errors.count == 1 {
 
                 expectation.fulfill()
 
@@ -166,7 +164,6 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testError403RateLimit() {
@@ -175,16 +172,16 @@ class StravaAPIClientMockTests: XCTestCase {
             "X-RateLimit-Limit": "600,30000",
             "X-RateLimit-Usage": "642,27300"
         ]
-        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403", status: 403, headers: headers)
+        self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403.json", status: 403, headers: headers)
         let expectation = XCTestExpectation(description: "requestCurrentAthleteError403RateLimit")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
-                case let .apiError(apiError, errorModel) = error,
-                case let .rateLimitingExceeded(limit, usage) = apiError,
+                case let .apiError(apiError) = error,
+                case let .rateLimitingExceeded(limit, usage) = apiError.errorType,
                 usage.shortTerm == 642,
                 limit.longTerm == 30000,
-                errorModel.errors.count == 1 {
+                apiError.errorModel?.errors.count == 1 {
 
                 expectation.fulfill()
 
@@ -194,7 +191,6 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testError403InvalidRateLimit() {
@@ -203,14 +199,14 @@ class StravaAPIClientMockTests: XCTestCase {
             "X-RateLimit-Limit": "30000",
             "X-RateLimit-Usage": "642"
         ]
-        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403", status: 403, headers: headers)
+        self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403.json", status: 403, headers: headers)
         let expectation = XCTestExpectation(description: "requestCurrentAthleteError403InvalidRateLimit")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
-                case let .apiError(apiError, errorModel) = error,
-                case .forbidden = apiError,
-                errorModel.errors.count == 1 {
+                case let .apiError(apiError) = error,
+                case .forbidden = apiError.errorType,
+                apiError.errorModel?.errors.count == 1 {
 
                 expectation.fulfill()
 
@@ -220,19 +216,18 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testError403Forbidden() {
 
-        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403", status: 403)
+        self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_rate_limit_403.json", status: 403)
         let expectation = XCTestExpectation(description: "requestCurrentAthleteError403Forbidden")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
-                case let .apiError(apiError, errorModel) = error,
-                case .forbidden = apiError,
-                errorModel.errors.count == 1 {
+                case let .apiError(apiError) = error,
+                case .forbidden = apiError.errorType,
+                apiError.errorModel?.errors.count == 1 {
 
                 expectation.fulfill()
 
@@ -242,19 +237,18 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testError401Unauthorized() {
 
-        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_unauthorized_401", status: 401)
+        self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_unauthorized_401.json", status: 401)
         let expectation = XCTestExpectation(description: "requestCurrentAthleteError401")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
-                case let .apiError(apiError, errorModel) = error,
-                case .unauthorized = apiError,
-                errorModel.errors.count == 0 {
+                case let .apiError(apiError) = error,
+                case .unauthorized = apiError.errorType,
+                apiError.errorModel?.errors.count == 0 {
 
                 expectation.fulfill()
 
@@ -264,19 +258,18 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testError500() {
 
-        let stub = self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_unauthorized_401", status: 500)
+        self.mockServerErrorData(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "error_unauthorized_401.json", status: 500)
         let expectation = XCTestExpectation(description: "requestCurrentAthleteError500")
         self.client.requestCurrentAthlete { result in
 
             if case let .failure(error) = result,
-                case let .apiError(apiError, errorModel) = error,
-                case .unknown = apiError,
-                errorModel.errors.count == 0 {
+                case let .apiError(apiError) = error,
+                case .serverError = apiError.errorType,
+                apiError.errorModel?.errors.count == 0 {
 
                 expectation.fulfill()
 
@@ -286,14 +279,13 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     // MARK: Resources
     
     func testMockCurrentLoggedInAthleteOk() {
         
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200")
+        self.mock(uri: "\(Constants.apiPrefix)/athlete", jsonFilename: "current_athlete_200.json")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
             
@@ -308,13 +300,12 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
     
     /// Extensive error test to cover the .underlyingError case
     func testMockCurrentLoggedInAthleteErrorUnderlyingNSError() {
         
-        let errorStub = self.mockServerError(path: "\(Constants.apiPrefix)/athlete")
+        self.mockServerError(path: "\(Constants.apiPrefix)/athlete")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
             
@@ -332,13 +323,12 @@ class StravaAPIClientMockTests: XCTestCase {
         }
         
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(errorStub)
     }
     
     /// Extensive error test to cover the .emptyData case
     func testMockCurrentLoggedInAthleteErrorEmptyData() {
         
-        let errorStub = self.mockServerEmptyData(path: "\(Constants.apiPrefix)/athlete")
+        self.mockServerEmptyData(path: "\(Constants.apiPrefix)/athlete")
         let expectation = XCTestExpectation(description: "requestCurrentAthlete")
         self.client.requestCurrentAthlete { result in
             
@@ -354,12 +344,11 @@ class StravaAPIClientMockTests: XCTestCase {
         }
         
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(errorStub)
     }
     
     func testCurrentAthleteActivitiesOk() {
         
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete/activities", jsonFilename: "athlete_activities_200")
+        self.mock(uri: "\(Constants.apiPrefix)/athlete/activities", jsonFilename: "athlete_activities_200.json")
         
         let expectation = XCTestExpectation(description: "requestCurrentAthleteActivities")
         self.client.requestCurrentAthleteActivities { result in
@@ -376,12 +365,11 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
     
     func testCurrentAthleteStatsOk() {
         
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athletes/\(1234)/stats", jsonFilename: "athlete_stats_200")
+        self.mock(uri: "\(Constants.apiPrefix)/athletes/\(1234)/stats", jsonFilename: "athlete_stats_200.json")
         
         let expectation = XCTestExpectation(description: "requestCurrentAthleteStats")
         self.client.requestCurrentAthleteStats(athleteId: 1234) { result in
@@ -400,12 +388,11 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testRequestCurrentAthleteClubsOk() {
 
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/athlete/clubs", jsonFilename: "athlete_clubs_200")
+        self.mock(uri: "\(Constants.apiPrefix)/athlete/clubs", jsonFilename: "athlete_clubs_200.json")
 
         let expectation = XCTestExpectation(description: "requestCurrentAthleteClubs")
         self.client.requestCurrentAthleteClubs { result in
@@ -429,12 +416,11 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 
     func testActivityByIdOk() {
 
-        let stub = self.mock(uri: "\(Constants.apiPrefix)/activities/1234", jsonFilename: "activity_by_id")
+        self.mock(uri: "\(Constants.apiPrefix)/activities/1234", jsonFilename: "activity_by_id.json")
 
         let expectation = XCTestExpectation(description: "requestActivityById")
         self.client.requestActivity(activityId: 1234) { result in
@@ -457,6 +443,5 @@ class StravaAPIClientMockTests: XCTestCase {
             }
         }
         self.wait(for: [expectation], timeout: 1.0)
-        self.removeStub(stub)
     }
 }

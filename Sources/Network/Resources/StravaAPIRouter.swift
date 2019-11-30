@@ -10,7 +10,7 @@ import Foundation
 
 enum StravaAPIRouter {
 
-    fileprivate enum Constants {
+    private enum Constants {
 
         static let baseURL = "https://www.strava.com/api"
         static let apiVersion = "v3"
@@ -43,7 +43,7 @@ extension StravaAPIRouter: URLResourceRequestConvertible {
 
 // MARK: - Private
 
-fileprivate extension StravaAPIRouter {
+private extension StravaAPIRouter {
 
     var resourcePath: String {
 

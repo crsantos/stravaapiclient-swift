@@ -8,10 +8,10 @@
 
 import Foundation
 
-public struct APIErrorModel: Codable {
+public struct StravaAPIErrorModel: Codable {
 
     let message: String
-    let errors: [APIErrorElement]
+    let errors: [StravaAPIErrorElement]
 
     enum CodingKeys: String, CodingKey {
 
@@ -20,7 +20,7 @@ public struct APIErrorModel: Codable {
     }
 }
 
-public struct APIErrorElement: Codable {
+public struct StravaAPIErrorElement: Codable {
 
     let resource: String
     let field: String

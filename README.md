@@ -10,7 +10,7 @@ Simple and lightweight NSURLSession wrapper around Strava API.
 
 ## Motivation
 
-When I first searched for any StravaAPI clients for iOS I found some old-fashioned obj-c like frameworks, but implemented in Swift, but not Swft4. They were like Swift1 😔
+When I first searched for any StravaAPI clients for iOS I found some old-fashioned obj-c like frameworks, but implemented in Swift, but not newer Swift. They were like Swift1 😔
 They were old abandoned frameworks, so I decided to implement a newer Swift 4+ implementation.
 
 ### API
@@ -50,7 +50,7 @@ self.client.requestCurrentAthleteActivities { result in
 
 #### Endpoints
 
-This is still a WIP,  but I will add new requests **soon**.
+This is still a WIP,  but I'm adding new requests. Feel free to contribute with some more.
 
 #### `GET /athlete`
 

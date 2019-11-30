@@ -12,7 +12,7 @@ import XCTest
 
 class StravaAPIClientIntegrationTests: XCTestCase {
 
-    fileprivate enum Constants {
+    private enum Constants {
 
         static let clientId = "XXX"
         static let clientSecret = "XXX"
@@ -20,7 +20,7 @@ class StravaAPIClientIntegrationTests: XCTestCase {
         static let accessToken = "XXX"
     }
 
-    fileprivate var client: StravaAPIClient!
+    private var client: StravaAPIClient!
 
     override func setUp() {
 

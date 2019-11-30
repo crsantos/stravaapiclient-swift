@@ -7,43 +7,63 @@
 //
 
 import Foundation
-import Mockingjay
+import OHHTTPStubs
 import XCTest
 
 extension XCTestCase {
 
-    @discardableResult
-    func mock(uri: String, verb: HTTPMethod = .get, jsonFilename: String) -> Stub {
+    private enum Constants {
 
-        let path = Bundle(for: type(of: self)).path(forResource: jsonFilename, ofType: "json")!
-        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-        return stub(http(verb, uri: uri), jsonData(data))
+        static let applicationJSON = ["Content-Type":"application/json"]
     }
 
-    @discardableResult
-    func mockCorruptData(uri: String, verb: HTTPMethod = .get) -> Stub {
+    func mock(uri: String, jsonFilename: String){
 
-        let data = Data([0,1,1,0,1])
-        return stub(http(verb, uri: uri), jsonData(data))
+        stub(condition: isPath(uri)) { _ in
+
+            let stubPath = OHPathForFile(jsonFilename, type(of: self))
+            return fixture(filePath: stubPath!,
+                           headers: Constants.applicationJSON)
+        }
     }
 
-    @discardableResult
-    func mockServerEmptyData(path: String, verb: HTTPMethod = .get) -> Stub {
+    func mockCorruptData(uri: String) {
 
-        return stub(http(verb, uri: path), http(500))
+        stub(condition: isPath(uri)) { _ in
+
+            let data = Data([0,1,1,0,1])
+            return OHHTTPStubsResponse(data: data,
+                                       statusCode:200,
+                                       headers: Constants.applicationJSON)
+        }
     }
 
-    @discardableResult
-    func mockServerErrorData(uri: String, verb: HTTPMethod = .get, jsonFilename: String, status: Int = 400, headers: [String:String]? = nil) -> Stub {
+    func mockServerEmptyData(path: String) {
 
-        let path = Bundle(for: type(of: self)).path(forResource: jsonFilename, ofType: "json")!
-        let data = try! Data(contentsOf: URL(fileURLWithPath: path))
-        return stub(http(verb, uri: uri), jsonData(data, status: status, headers: headers))
+        stub(condition: isPath(path)) { _ in
+
+            return OHHTTPStubsResponse(data: Data(),
+                                       statusCode: 500,
+                                       headers: Constants.applicationJSON)
+        }
     }
 
-    @discardableResult
-    func mockServerError(path: String, verb: HTTPMethod = .get) -> Stub {
+    func mockServerErrorData(uri: String, jsonFilename: String, status: Int32 = 400, headers: [String:String]? = nil) {
 
-        return stub(http(verb, uri: path), failure(NSError(domain: "D", code: 123456, userInfo: nil)))
+        stub(condition: isPath(uri)) { _ in
+
+            let stubPath = OHPathForFile(jsonFilename, type(of: self))
+            return fixture(filePath: stubPath!,
+                           status: status,
+                           headers: headers)
+        }
+    }
+
+    func mockServerError(path: String) {
+
+        stub(condition: isPath(path)) { _ in
+
+            return OHHTTPStubsResponse(error: NSError(domain: "D", code: 123456, userInfo: nil))
+        }
     }
 }

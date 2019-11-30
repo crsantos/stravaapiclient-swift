@@ -11,7 +11,7 @@ version: 2
 jobs:
   build-and-test:
     macos:
-      xcode: "9.4.1"
+      xcode: "11.2.1"
     shell: /bin/bash --login -eo pipefail
     environment:
       CIRCLE_TEST_REPORTS: ~/test-reports
@@ -19,11 +19,19 @@ jobs:
       LANG: en_US.UTF-8
     steps:
       - checkout
+      - run:
+          name: "Pull Submodules"
+          command: |
+            git submodule init
+            git submodule update
       - restore_cache:
           key: v1-macos-gems-{{ checksum "Gemfile.lock" }}
       - restore_cache:
           keys:
             - v3-homebrew-{{ epoch }}
+      - run:
+          name: Set Ruby Version
+          command: echo 'chruby ruby-2.6' >> ~/.bash_profile
       - run:
           name: Bundle install
           command: |

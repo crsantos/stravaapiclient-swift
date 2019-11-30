@@ -10,7 +10,7 @@ import Foundation
 
 struct RequestSerializer {
 
-    fileprivate enum Constants {
+    private enum Constants {
 
         static let bearerKey = "Bearer"
         static let authorizationKey = "Authorization"
